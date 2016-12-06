@@ -1,0 +1,24 @@
+# [Importing the required modules for this program]
+import os
+import subprocess
+import gtk
+import sys
+
+# [Declare the function for the click event of dynamic inputs]
+def RefreshButton(self, button):
+         
+         # [Checkes the uses inputs and creates the lcctm.png file]
+         if self._thr == "" and self._topN == "":
+            subprocess.call(["./generateDot",self._filename, self._dependency,"-topN", "8"])
+	 elif self._thr == "": 
+            subprocess.call(["./generateDot",self._filename, self._dependency, "-topN", self._topN])
+	 elif self._topN == "":
+            subprocess.call(["./generateDot",self._filename, self._dependency, "-thr", self._thr])
+	 else:
+            print ">> invalid State"
+
+	 subprocess.call(["ls", "-l", "lcctm.png"])
+	
+         DisplayImage(self)  
+        
+         return

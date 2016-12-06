@@ -1,0 +1,11 @@
+# [Importing the required modules for this program]
+import os
+import subprocess
+import gtk
+import sys
+
+# [Showing the HTML display in the view port]
+def HtmlView(self):
+    self._view = webkit.WebView()
+    self._view.open('http://localhost/lcctm/test.php') 
+    return

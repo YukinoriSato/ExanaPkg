@@ -1,0 +1,44 @@
+/* topNodeID=0
+ */
+digraph G { 
+ graph [outputMode=nodesfirst packMode="graph" splines=true size="1000,1000"]; 
+label="/home/ysato/ExanaPkgGitHub/Sample.Exana/LoopAndCall/1206.1501/lcctm.dot (Thr= 0.00%, instCnt)"
+level_0 [pos="0,0" shape=none];level_1 [pos="0,100" shape=none];level_2 [pos="0,200" shape=none];level_3 [pos="0,300" shape=none];level_4 [pos="0,400" shape=none];level_0 -> level_1 -> level_2 -> level_3 -> level_4[color=transparent];
+	 N0xbb0690 [shape=box, label="main \n #invoke: 1 \n 100.0% (0.0%) "] [URL="index.php?nodeID=0&filename=lcct.dat&checkedflags=-mem -flop -RW&summary_threshold_ratio=0.0&exefile="];
+	 N0xbb0690 -> N0xbb0690 [ color=transparent, headlabel=" \n  \n 1.34e+08[B]\n  R=1.14e+08 (1.60e+01) [B] \n  W=2.00e+07 (2.00e+01) [B]\n8.50e+06[flop]\n " ,labeldistance = 2];
+	 N0xbb0748 [shape=box, label="puts@plt \n #invoke: 2 \n  0.0% (0.0%) "] [URL="index.php?nodeID=1&filename=lcct.dat&checkedflags=-mem -flop -RW&summary_threshold_ratio=0.0&exefile="];
+	 N0xbb0748 -> N0xbb0748 [ color=transparent, headlabel=" \n  \n 8.23e+03[B]\n  R=5.36e+03 (5.36e+03) [B] \n  W=2.87e+03 (2.87e+03) [B]\n0.00e+00[flop]\n " ,labeldistance = 2];
+	 N0xbb0690 -> N0xbb0748 ;
+	 N0xbb0800 [shape=box, label="func1 \n #invoke: 1 \n 75.8% (0.0%) "] [URL="index.php?nodeID=2&filename=lcct.dat&checkedflags=-mem -flop -RW&summary_threshold_ratio=0.0&exefile="];
+	 N0xbb0800 -> N0xbb0800 [ color=transparent, headlabel=" \n  \n 1.04e+08[B]\n  R=8.80e+07 (2.40e+01) [B] \n  W=1.60e+07 (4.40e+01) [B]\n7.00e+06[flop]\n " ,labeldistance = 2];
+	 N0xbb0690 -> N0xbb0800 ;
+	 N0xbb0970 [shape=box, label="initA \n #invoke: 1 \n 27.3% (0.0%) "] [URL="index.php?nodeID=4&filename=lcct.dat&checkedflags=-mem -flop -RW&summary_threshold_ratio=0.0&exefile="];
+	 N0xbb0970 -> N0xbb0970 [ color=transparent, headlabel=" \n  \n 4.40e+07[B]\n  R=3.60e+07 (1.60e+01) [B] \n  W=8.01e+06 (2.00e+01) [B]\n4.00e+06[flop]\n " ,labeldistance = 2];
+	 N0xbb0800 -> N0xbb0970 ;
+	 N0xbb0ae0 [label=<loop 3<br/>#invoke: 2   #itr: 1001<br/>   SampleMain.c:10 <br/> 27.3% (0.0%) >] [URL="index.php?nodeID=6&filename=lcct.dat&checkedflags=-mem -flop -RW&summary_threshold_ratio=0.0&exefile="];
+	 N0xbb0ae0 -> N0xbb0ae0 [ color=transparent, headlabel=" \n  \n 4.40e+07[B]\n  R=3.60e+07 (1.20e+04) [B] \n  W=8.01e+06 (8.00e+03) [B]\n4.00e+06[flop]\n " ,labeldistance = 2];
+	 N0xbb0970 -> N0xbb0ae0 ;
+	 N0xbb0b98 [label=<loop 2<br/>#invoke: 1001   #itr: 1001<br/>   SampleMain.c:11 <br/> 27.3% (27.3%) >] [URL="index.php?nodeID=7&filename=lcct.dat&checkedflags=-mem -flop -RW&summary_threshold_ratio=0.0&exefile="];
+	 N0xbb0b98 -> N0xbb0b98 [ color=transparent, headlabel=" \n  \n 4.40e+07[B]\n  R=3.60e+07 (3.60e+07) [B] \n  W=8.00e+06 (8.00e+06) [B]\n4.00e+06[flop]\n " ,labeldistance = 2];
+	 N0xbb0ae0 -> N0xbb0b98 ;
+	 N0xbb0c50 [label=<loop 5<br/>#invoke: 2   #itr: 1001<br/>   SampleMain.c:25 <br/> 48.5% (0.0%) >] [URL="index.php?nodeID=8&filename=lcct.dat&checkedflags=-mem -flop -RW&summary_threshold_ratio=0.0&exefile="];
+	 N0xbb0c50 -> N0xbb0c50 [ color=transparent, headlabel=" \n  \n 6.00e+07[B]\n  R=5.20e+07 (1.20e+04) [B] \n  W=8.01e+06 (8.00e+03) [B]\n3.00e+06[flop]\n " ,labeldistance = 2];
+	 N0xbb0800 -> N0xbb0c50 ;
+	 N0xbb0d08 [label=<loop 4<br/>#invoke: 1001   #itr: 1001<br/>   SampleMain.c:26 <br/> 48.5% (48.5%) >] [URL="index.php?nodeID=9&filename=lcct.dat&checkedflags=-mem -flop -RW&summary_threshold_ratio=0.0&exefile="];
+	 N0xbb0d08 -> N0xbb0d08 [ color=transparent, headlabel=" \n  \n 6.00e+07[B]\n  R=5.20e+07 (5.20e+07) [B] \n  W=8.00e+06 (8.00e+06) [B]\n3.00e+06[flop]\n " ,labeldistance = 2];
+	 N0xbb0c50 -> N0xbb0d08 ;
+	 N0xbb0dc0 [label=<loop 7<br/>#invoke: 2   #itr: 501<br/>   SampleMain.c:52 <br/> 24.2% (0.0%) >] [URL="index.php?nodeID=10&filename=lcct.dat&checkedflags=-mem -flop -RW&summary_threshold_ratio=0.0&exefile="];
+	 N0xbb0dc0 -> N0xbb0dc0 [ color=transparent, headlabel=" \n  \n 3.00e+07[B]\n  R=2.60e+07 (6.00e+03) [B] \n  W=4.02e+06 (6.00e+03) [B]\n1.50e+06[flop]\n " ,labeldistance = 2];
+	 N0xbb0690 -> N0xbb0dc0 ;
+	 N0xbb0e78 [shape=box, label="func2 \n #invoke: 500 \n 24.2% (0.0%) "] [URL="index.php?nodeID=11&filename=lcct.dat&checkedflags=-mem -flop -RW&summary_threshold_ratio=0.0&exefile="];
+	 N0xbb0e78 -> N0xbb0e78 [ color=transparent, headlabel=" \n  \n 3.00e+07[B]\n  R=2.60e+07 (1.20e+04) [B] \n  W=4.01e+06 (1.00e+04) [B]\n1.50e+06[flop]\n " ,labeldistance = 2];
+	 N0xbb0dc0 -> N0xbb0e78 ;
+	 N0xbb0f30 [label=<loop 6<br/>#invoke: 501   #itr: 1001<br/>   SampleMain.c:39 <br/> 24.2% (24.2%) >] [URL="index.php?nodeID=12&filename=lcct.dat&checkedflags=-mem -flop -RW&summary_threshold_ratio=0.0&exefile="];
+	 N0xbb0f30 -> N0xbb0f30 [ color=transparent, headlabel=" \n  \n 3.00e+07[B]\n  R=2.60e+07 (2.60e+07) [B] \n  W=4.00e+06 (4.00e+06) [B]\n1.50e+06[flop]\n " ,labeldistance = 2];
+	 N0xbb0e78 -> N0xbb0f30 ;
+{rank = same; level_0; N0xbb0690; } 
+{rank = same; level_1; N0xbb0748; N0xbb0dc0; N0xbb0800; } 
+{rank = same; level_2; N0xbb0970; N0xbb0e78; N0xbb0c50; } 
+{rank = same; level_3; N0xbb0ae0; N0xbb0f30; N0xbb0d08; } 
+{rank = same; level_4; N0xbb0b98; } 
+} 

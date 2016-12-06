@@ -1,0 +1,18 @@
+# [Importing the required modules for this program]
+import os
+import subprocess
+import gtk
+import sys
+import webkit
+
+# [Changing the user access permission]
+def ChangePermission():
+    # [Execute the generateDot program to create the lcctm.png file] 
+    subprocess.call(["ls", "-l", "lcctm.png"])
+    #subprocess.call(["chown", "faisal:daemon", "lcctm.dot"])
+    #subprocess.call(["chown", "faisal:daemon", "out.map"])
+    #subprocess.call(["chown", "faisal:daemon", "lcctm.png"])
+    subprocess.call(["chmod", "775", "lcctm.dot"])
+    subprocess.call(["chmod", "775", "out.map"])
+    subprocess.call(["chmod", "775", "lcctm.png"])
+    return

@@ -1,0 +1,20 @@
+#!/usr/bin/ruby
+
+#print ARGV.size
+#print ARGV
+
+dir=ENV['EXANA_DIR'] 
+
+# for pcc
+#dir="/work/dev-exana/ExanaPkg"
+
+# for ExanaPkg release
+command="pin -t "+ dir + "/pintool/Exana.so"
+
+
+for f in ARGV	
+  command=command +" " + f
+end
+#p command
+system(command)
+

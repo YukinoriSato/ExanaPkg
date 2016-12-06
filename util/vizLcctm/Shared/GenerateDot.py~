@@ -1,0 +1,110 @@
+# [Importing the required modules for this program]
+import os
+import subprocess
+import gtk
+import sys
+
+# [Showing the image display in the scrolled window]
+def GenerateDot(self):
+
+        CheckedFlags = ''  
+  
+        # [Get the status of the Flag veriables]
+        if self._mem == "1":
+           CheckedFlags = '-mem'    
+        if self._ins == "1":
+           if CheckedFlags == '':
+              CheckedFlags = '-ins' 
+           else:
+              CheckedFlags += ' -ins'    
+        if self._cycle == "1":
+           if CheckedFlags == '':
+              CheckedFlags = '-cycle' 
+           else:
+              CheckedFlags += ' -cycle'  
+        if self._cpi == "1":
+           if CheckedFlags == '':
+              CheckedFlags = '-cpi' 
+           else:
+              CheckedFlags += ' -cpi' 
+        if self._bpi == "1":
+           if CheckedFlags == '':
+              CheckedFlags = '-bpi' 
+           else:
+              CheckedFlags += ' -bpi' 
+        if self._bpc == "1":
+           if CheckedFlags == '':
+              CheckedFlags = '-bpc' 
+           else:
+              CheckedFlags += ' -bpc'  
+        if self._pbf == "1":
+           if CheckedFlags == '':
+              CheckedFlags = '-pbf' 
+           else:
+              CheckedFlags += ' -pbf' 
+        if self._dep == "1":
+           if CheckedFlags == '':
+              CheckedFlags = '-dep' 
+           else:
+              CheckedFlags += ' -dep' 
+        if self._flop == "1":
+           if CheckedFlags == '':
+              CheckedFlags = '-flop' 
+           else:
+              CheckedFlags += ' -flop'           
+
+        print  "Checked Flages:" + CheckedFlags
+        
+        # [READ THE 1st LINE OF LCCTM.DOT FILE for the topNodeID]
+        file = open ('lcctm.dot','r')
+        topNodeID = file.readline()    
+        topNodeID = topNodeID.replace('/* topNodeID=','')
+        topNodeID = topNodeID.replace(' */','')
+        print  "topNodeID:"+ topNodeID   
+        
+   
+        # [Checkes the uses inputs and creates the lcctm.png file]
+        if topNodeID == 0:
+           if CheckedFlags == "":
+              if self._thr == "" and self._topN == "":
+                 subprocess.call(["./generateDot",self._filename,"-topN", "8"])
+	      elif self._thr == "": 
+                 subprocess.call(["./generateDot",self._filename,"-topN", self._topN]) 
+              elif self._topN == "":
+                 subprocess.call(["./generateDot",self._filename,"-thr", self._thr])
+	      else:
+                 print ">> invalid State"
+           else:  
+              if self._thr == "" and self._topN == "":
+                 subprocess.call(["./generateDot",self._filename, CheckedFlags ,"-topN", "8"])
+	      elif self._thr == "": 
+                 subprocess.call(["./generateDot",self._filename, CheckedFlags, "-topN", self._topN]) 
+              elif self._topN == "":
+                 subprocess.call(["./generateDot",self._filename, CheckedFlags, "-thr", self._thr])
+	      else:
+                 print ">> invalid State"
+        else:
+           if CheckedFlags == "":
+              if self._thr == "" and self._topN == "":
+                 subprocess.call(["./generateDot",self._filename,"-topN", "8","-nodeID",topNodeID])
+	      elif self._thr == "": 
+                 subprocess.call(["./generateDot",self._filename,"-topN", self._topN,"-nodeID",topNodeID]) 
+              elif self._topN == "":
+                 subprocess.call(["./generateDot",self._filename,"-thr", self._thr."-nodeID",topNodeID])
+	      else:
+                 print ">> invalid State"
+           else:  
+              if self._thr == "" and self._topN == "":
+                 subprocess.call(["./generateDot",self._filename, CheckedFlags ,"-topN", "8","-nodeID",topNodeID])
+	      elif self._thr == "": 
+                 subprocess.call(["./generateDot",self._filename, CheckedFlags, "-topN", self._topN,"-nodeID",topNodeID]) 
+              elif self._topN == "":
+                 subprocess.call(["./generateDot",self._filename, CheckedFlags, "-thr", self._thr,"-nodeID",topNodeID])
+	      else:
+                 print ">> invalid State" 
+        
+        CheckedFlags = '' 
+                
+        subprocess.call(["ls", "-l", "lcctm.png"])
+
+        return 

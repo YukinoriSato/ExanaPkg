@@ -1,0 +1,2 @@
+g++ checkMemoryUsage.c -c -fPIC
+g++ -fPIC -shared -o libMemUse.so checkMemoryUsage.o

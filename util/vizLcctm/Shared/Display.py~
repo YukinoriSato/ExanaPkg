@@ -1,0 +1,85 @@
+# [Importing the required modules for this program]
+import os
+import subprocess
+import gtk
+import sys
+import webkit
+
+# [Showing the image display in the scrolled window]
+def DisplayImage(self):
+    
+      # [Read the genenrated png file into the pixbuf] 
+      pixbuf = gtk.gdk.pixbuf_new_from_file("lcctm.png")
+        
+      # [Get default window size with respect to display monitor]
+      window = gtk.Window()
+      size = window.get_screen()
+      m = size.get_monitor_at_window(size.get_active_window())  
+      monitor = size.get_monitor_geometry(m)
+
+      # [Get the picture width and height]   
+      pix_width = pixbuf.get_width()
+      pix_heigth = pixbuf.get_height()   
+	
+      # [Resize the picture width and height to fit into the window display]       	
+      if pix_width > monitor.width/1.5  or pix_heigth > monitor.height/1.5:
+         pix_width = monitor.width/1.7
+         pix_heigth = monitor.height/1.7
+             
+      scaled_buf = pixbuf.scale_simple(pix_width, pix_heigth,gtk.gdk.INTERP_BILINEAR) 
+      self._image.set_from_pixbuf(scaled_buf) 
+      ###self._image.set_from_pixbuf(pixbuf) 	
+        
+      # [Add the image container with the scrolled_window variable to show the image]
+      self.Scrolled_Window.add_with_viewport(self._image)
+      self.Scrolled_Window.show()
+      self._image.show()
+	
+      # [Horizontal box container ends with the scrolled_window variable]  
+      self._hbox.pack_end(self.Scrolled_Window,True, True, 8)    	
+      print self._thr, self._topN   
+
+      return  
+
+# [Showing the HTML display in the scrolled window]
+def DisplayHtml(self):
+    
+        # [Read the genenrated png file into the pixbuf] 
+	pixbuf = gtk.gdk.pixbuf_new_from_file("lcctm.png")
+        
+        # [Get default window size with respect to display monitor]
+        window = gtk.Window()
+        size = window.get_screen()
+        m = size.get_monitor_at_window(size.get_active_window())  
+        monitor = size.get_monitor_geometry(m)
+
+        # [Get the picture width and height] 
+        pix_width = pixbuf.get_width()
+	pix_heigth = pixbuf.get_height()   
+	
+        # [Resize the picture width and height to fit into the window display]       	
+        if pix_width > monitor.width/1.5  or pix_heigth > monitor.height/1.5:
+           pix_width = monitor.width/1.7
+           pix_heigth = monitor.height/1.7
+             
+       	scaled_buf = pixbuf.scale_simple(pix_width, pix_heigth,gtk.gdk.INTERP_BILINEAR) 
+	###self._image.set_from_pixbuf(scaled_buf)	
+        
+        # [Add the image container with the scrolled_window variable to show the image] 
+        self.Scrolled_Window.add_with_viewport(self._view)
+	self.Scrolled_Window.show()
+        self._view.show()
+        ###self._image.show()
+       
+        # [Horizontal box container ends with the scrolled_window variable]  
+	self._hbox.pack_end(self.Scrolled_Window,True, True, 8)    	
+ 	print self._thr, self._topN
+    
+        return 
+
+# [Showing the HTML display in the view port]
+def HtmlView(self):
+    self._view = webkit.WebView()
+    self._view.open('http://localhost:8000/lcctm/main.php') 
+    return
+

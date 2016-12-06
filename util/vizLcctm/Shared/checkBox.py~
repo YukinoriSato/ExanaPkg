@@ -1,0 +1,32 @@
+# [Importing the required modules for this program]
+import os
+import subprocess
+import gtk
+import sys
+import webkit
+
+# [Defined function for Check box options]
+def iBF_checkbox(self, widget, checkbox):
+    
+        iBF_checkbox = checkbox.get_active()
+
+        if iBF_checkbox:
+           self._iBF = "1"
+           print "IBF is checked"
+        else:
+           print "IBF is not checked"
+
+        return 
+
+# [Defined function for Check box options]
+def Mem_checkbox(self, widget, checkbox):
+    
+        Mem_checkbox = checkbox.get_active()
+
+        if Mem_checkbox:
+           self._Mem = "1"
+           print "Mem is checked"
+        else:
+           print "Mem is not checked"
+
+        return
