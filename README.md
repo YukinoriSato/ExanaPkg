@@ -11,7 +11,7 @@ All Rights Reserved.
 How to analyze an application is in the file './HowToUse'
 
 
-## This code is for 64bit linux environment, 
+This code is for 64bit linux environment, 
     "ia32_intel64-linux"
      Tested on 
      - CentOS 7.2
@@ -30,21 +30,25 @@ How to analyze an application is in the file './HowToUse'
 * git clone https://github.com/YukinoriSato/Exana.git
 * cd ExanaPkg
 * Set the variables 'EXANA_DIR' and 'PIN_DIR' 
+
     Edit setupExana.sh(bash), setupExana.csh(csh) to the absolute paths for ExanaPkg and Pin tool kit directory if you install Exana other than '/home/$USER'.
+
 * Install the following software
+
     Install graphviz, graphviz-devel, graphviz-gd for visualization
     Install php (5.4 or later) for interactive visualization
 
 
 ## Use the command 'Exana'
-   % ./Exana -- ./a.out
-   Exana is a script written by Ruby which invoke pin and pintool.
-   Put this 'Exana' directory at your home directory,
-   or modify the path specified by the Exana script (~/Exana-x.x-rYYY)
-   This command eases the activation of pin tool set.
 
-   After the execution of the Exana completed, you obtain three output
-     files in the <mmdd.pid> directory.  
+% ./Exana -- ./a.out
+ 
+    Exana is a script written by Ruby which invoke pin and pintool.
+    Put this 'Exana' directory at your home directory,
+    or modify the path specified by the Exana script (~/Exana-x.x-rYYY)
+    This command eases the activation of pin tool set.
+
+After the execution of the Exana completed, you obtain three output files in the <mmdd.pid> directory.  
 
      1. prof.out file
      2. static.out file 
@@ -53,10 +57,12 @@ How to analyze an application is in the file './HowToUse'
 More detail information about how-to-use is in the file './HowToUse'
 
     You can use it with options;
+
     % ./Exana -mode {CCT, LCCT, LCCT+M} -cntMode {instCnt, cycleCnt} -loopID {n} -itr {a:b} -apr {c:d} -memtrace {0,1} -pageSize {64B, ..., 64kB} -- ./a.out
 
     -- Specify Region of Interests (ROI) --
     If you use with the following options, a ROI region (loopID=3, itr=1:2, apr=1) is analyzed based on dynamic instruction counts. 
+
     % ./Exana -cntMode instCnt -loopID 3 -itr 1:2 -apr 1 -- ./a.out
 
     If you wish to analyze memory behavior of the ROI region (loopID=3, itr=1:2, apr=1, please specify options like:
@@ -117,3 +123,19 @@ modify or update this, please see the original source code in
 https://github.com/YukinoriSato/Exana and copy the outputted Exana.so
 file under the source/tools/Exana/obj-intel64 directory into
 ExanaPkg/pintool directory.
+
+
+## Citation and Details for Exana
+
+The canonical publication to cite Exana and ExanaPkg is:
+
+* Yukinori Sato, Shimpei Sato, and Toshio Endo. Exana: An Execution-driven Application Analysis Tool for Assisting Productive Performance Tuning. Proceedings of the 2nd Workshop on Software Engineering for Parallel Systems (SEPS 2015), held in conjunction with SPLASH2015, Pages 1-10, October 2015. (DOI: 10.1145/2837476.2837477)
+
+
+Please read the following papers if you are interested in detail techniques behind Exana:
+
+
+* Yukinori Sato, Yasushi Inoguchi, Tadao Nakamura. Identifying Program Loop Nesting Structures during Execution of Machine Code. IEICE Transaction on Information and Systems, Vol.E97-D, No.9, pp.2371-2385, Sep. 2014. (DOI:10.1587/transinf.2013EDP7455)
+
+* Yukinori Sato, Yasushi Inoguchi and Tadao Nakamura. Whole Program Data Dependence Profiling to Unveil Parallel Regions in the Dynamic Execution. In Proceedings of 2012 IEEE International Symposium on Workload Characterization (IISWC 2012). (DOI:10.1109/IISWC.2012.6402902) 
+
