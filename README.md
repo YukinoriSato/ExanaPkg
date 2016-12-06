@@ -1,11 +1,10 @@
 # ExanaPkg
-
-------------------------------------------------------------------------------
+---
 ExanaPkg: Utility for Exana (EXecution-driven Application aNAlysis tool)
 
 Copyright (C)   2014-2016,   Yukinori Sato
 All Rights Reserved. 
-------------------------------------------------------------------------------
+---
 
 
 How to analyze an application is in the file './HowToUse'
