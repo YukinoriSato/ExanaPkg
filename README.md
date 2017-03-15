@@ -29,7 +29,7 @@ This code is for 64bit linux environment,
     Here, Exana is verified using Pin tool kit rev 71313 for Intel64 linux on CentOS.
 
 * Unpack the pin-2.14-71313-gcc.4.4.7-linux.tar.gz
-* git clone https://github.com/YukinoriSato/Exana.git
+* git clone https://github.com/YukinoriSato/ExanaPkg.git
 * cd ExanaPkg
 * Set the variables 'EXANA_DIR' and 'PIN_DIR' 
 
