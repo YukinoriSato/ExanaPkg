@@ -4,12 +4,16 @@
 
 ExanaPkg: Utility for Exana (EXecution-driven Application aNAlysis tool)
 
-Copyright (C)   2014-2016,   Yukinori Sato
+Copyright (C)   2014-2017,   Yukinori Sato
 All Rights Reserved. 
 
 ------------------------------------------------------------------------
 
+# Update:
+* C2Sim (Advanced cache simulation with line-conflict detection, see [EuroPar 2017])
+% Exana -mode C2Sim -- ./a.out
 
+# Usage
 How to analyze an application is in the file './HowToUse'
 
 
@@ -130,6 +134,8 @@ ExanaPkg/pintool directory.
 ## Citation and Details for Exana
 
 The canonical publication to cite Exana and ExanaPkg is:
+
+* Yukinori Sato and Toshio Endo. “An Accurate Simulator of Cache-line Conflicts to Exploit the Underlying Cache Performance” 23rd International Europian Conference on Parallel and Distributed Computing (Euro-Par 2017), August 2017. (DOI: 10.1007/978-3-319-64203-1_9)
 
 * Yukinori Sato, Shimpei Sato, and Toshio Endo. Exana: An Execution-driven Application Analysis Tool for Assisting Productive Performance Tuning. Proceedings of the 2nd Workshop on Software Engineering for Parallel Systems (SEPS 2015), held in conjunction with SPLASH2015, Pages 1-10, October 2015. (DOI: 10.1145/2837476.2837477)
 

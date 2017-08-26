@@ -65,16 +65,6 @@ outputted to "memTrace.out.X" file.
       	  cycle count, rtnName/loopID + basic format 
 
 
-If you would like to analyze memory access patterns for each instructions,
-then please specify an option for MemPat analysis:
-
-     % Exana -mempat 1 -- ./SampleMain
-     % cd <mmdd.pid>
-         Here, the memory access patterns are outputted to mempat.dat
-     % viewMempat 
-         Then, you can view the memory access patterns for each instructions
-         in a text format.
-
 Now, you can try Himeno Benchmark to evaluate feasibility for parallel
 programs.
 
@@ -102,88 +92,4 @@ before Exana command.  Then, you can obtain LCCTs for each process.
       % mpirun -np 4 ./bmt S
       % mpirun -np 4 Exana -- ./bmt S
       % vizLcctm mmdd.pid/lcct.dat &
-
-
-
-====================================================================
-Format of each file or representation:
-
-(1) memTrace.out 
-
-It contains all of memory access traces among the specified
-region.  The detail file format is as follows: Each memory access is
-represented in one line such as "R8@401812 7fffe81bd5c8". The first
-element 'R8@401812' means 8 byte read memory access performed by
-memory access instruction located at 0x401812 in the executed binary
-code.  The second element '7fffe81bd5c8' means the memory address of
-accessed by the memory instruction.
-
-In the memTrace.out file, other lines than actual memory access
-information begin with the prefix "##".  At the top of each iteration,
-the trip count of the loop iteration is presented like: "## loopID =
-32 apr = 1 tripCnt 1 range=[1,2]"
-
-The working data set size of the region appears in the
-'prof.out.<pid>'.  If you would like check only the information without
-memory trace file, please specify the region with '-memtrace 0'
-option, then you can obtain much faster and analyze the larger region.
-
-
-(2) prof.out.<pid>
-It includes
-  Total number of dynamic instances in LCCT+M
-  accumulated instruction counts (accBaseInst, accFpInst, accVecInst) (*)
-  working data set size (touch-page)
-  working data set size (read, write or either, memory operation base)
-  Cycles obtained by RDTSC 
-
- (*) Here, we divide instruction class as follows:
-     FpInst: XED_EXTENSION_X87 
-     VecInst: XED_EXTENSION_SSE, XED_EXTENSION_SSE2, XED_EXTENSION_SSE3, 
-              XED_EXTENSION_SSE4,XED_EXTENSION_SSE4A,
-              XED_EXTENSION_SSSE3,XED_EXTENSION_AVX, XED_EXTENSION_AVX2,
-              XED_EXTENSION_AVX2GATHER
-     BaseInst: Others
-
-     based on "enum xed_extension_enum_t" of XED
-     http://software.intel.com/sites/landingpage/pintool/docs/53271/Xed/html/main.html#API_REF
-
-
-(3) <bin>_<mmdd.pid>.dot
-
-You can visualize dot file using graphviz.  The specification of dot
-file is as follows:
-
-http://www.graphviz.org/
-
-
-(4)  LCCT or LCCT+M representation
-
-Here, the circles represent loops, the boxes represent procedure
-calls.  Dynamic control flows of L-CCT are represented in solid
-(black) lines.  So, an outer loop become a parent node and an inner
-loop become a child node of this graph.  Also, we can find the # of
-appearances of each node.  The average # of loop iterations is
-outputted if the node is a loop.  
-
-In each node, we can see the time cost for executing the node.  After
-the percentage of the total cycles accumulated over all of its
-successors, the percentage of the cycles executed in the node itself
-is represented inside the parenthesis.  In the dot file, only the
-nodes that exceed summary_threshold appeared.  In the prof.out.<pid>
-file, all of appeared nodes are recorded.
-
-In LCCT+M representation, in addition to loop structures, we can see
-the dependencies among them.  Here, dynamic data dependencies are
-represented in arrows with dashed lines.  Here, an arrowed dash line
-(blue color) indicates data dependencies between these two regions.
-An arrowed dash line (orange color) indicates data dependencies among
-different appearances of a loop.  The Average distances of them are
-represented in D_itr and D_apr.
-
-There are three possible data dependencies in the view of a dynamic
-execution context: across regions, between appearances of a loop, and
-between iterations of a loop.  Using the LCCT+M representation, we can
-represent all of three dependencies.
-
 

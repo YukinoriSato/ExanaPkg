@@ -18,6 +18,8 @@
 #include "print.h"
 #include "file.h"
 
+#define TP_THR 500
+
 
 UINT64 numDyInst=0;
 UINT64 numDyLoopNode=0;
@@ -577,25 +579,52 @@ void printNodeStat(struct treeNode *node){
 	outDotFile<<"   iBF="<<setprecision(2)<<node->statAccum->accumMemAccessByte/(float)flop<<"\\n";
 	}
       struct workingSetInfoElem *a=&(node->workingSetInfo);
-      if(wsPageFlag){
-	if(a->minCntRW!=a->maxCntRW)
-	  outDotFile<<"   wsPage="<<setprecision(1)<<fixed<<a->sumRW/(float) node->stat->n_appearance<<" ["<<dec<<a->minCntRW<<", "<<a->maxCntRW<<"]\\n";
-	else
-	  outDotFile<<"   wsPage="<<dec<<a->minCntRW<<"\\n";
-      }    
-      if(wsReadFlag){
-	if(a->minCntR!=a->maxCntR)
-	  outDotFile<<"   wsRead="<<setprecision(1)<<fixed<<a->sumR/(float) node->stat->n_appearance<<" ["<<dec<<a->minCntR<<", "<<a->maxCntR<<"]\\n";
-	else
-	  outDotFile<<"   wsRead="<<dec<<a->minCntR<<"\\n";
-      }    
-      if(wsWriteFlag){
-	if(a->minCntW!=a->maxCntW)
-	  outDotFile<<"   wsWrite="<<setprecision(1)<<fixed<<a->sumW/(float) node->stat->n_appearance<<" ["<<dec<<a->minCntW<<", "<<a->maxCntW<<"]\\n";
-	else
-	  outDotFile<<"   wsWrite="<<dec<<a->minCntW<<"\\n";
 
-      }    
+      if(node->stat->n_appearance>TP_THR){
+	if(wsPageFlag){
+	  if(a->minCntRW!=a->maxCntRW)
+	    outDotFile<<"   wsPage="<<setprecision(1)<<fixed<<a->sumRW/(float) TP_THR <<" ["<<dec<<a->minCntRW<<", "<<a->maxCntRW<<"]\\n";
+	  else
+	    outDotFile<<"   wsPage="<<dec<<a->minCntRW<<"\\n";
+	}    
+	if(wsReadFlag){
+	  if(a->minCntR!=a->maxCntR)
+	    outDotFile<<"   wsRead="<<setprecision(1)<<fixed<<a->sumR/(float)  TP_THR <<" ["<<dec<<a->minCntR<<", "<<a->maxCntR<<"]\\n";
+	  else
+	    outDotFile<<"   wsRead="<<dec<<a->minCntR<<"\\n";
+	}    
+	if(wsWriteFlag){
+	  if(a->minCntW!=a->maxCntW)
+	    outDotFile<<"   wsWrite="<<setprecision(1)<<fixed<<a->sumW/(float)  TP_THR <<" ["<<dec<<a->minCntW<<", "<<a->maxCntW<<"]\\n";
+	  else
+	    outDotFile<<"   wsWrite="<<dec<<a->minCntW<<"\\n";
+	}
+
+      }
+      else{
+	if(wsPageFlag){
+	  if(a->minCntRW!=a->maxCntRW)
+	    outDotFile<<"   wsPage="<<setprecision(1)<<fixed<<a->sumRW/(float) node->stat->n_appearance<<" ["<<dec<<a->minCntRW<<", "<<a->maxCntRW<<"]\\n";
+	  //outDotFile<<"   wsPage="<<dec<<a->sumRW<<" "<<setprecision(1)<<fixed<<a->sumRW/(float) node->stat->n_appearance<<" ["<<dec<<a->minCntRW<<", "<<a->maxCntRW<<"]\\n";
+	  else
+	    outDotFile<<"   wsPage="<<dec<<a->minCntRW<<"\\n";
+	}    
+	if(wsReadFlag){
+	  if(a->minCntR!=a->maxCntR)
+	    outDotFile<<"   wsRead="<<setprecision(1)<<fixed<<a->sumR/(float) node->stat->n_appearance<<" ["<<dec<<a->minCntR<<", "<<a->maxCntR<<"]\\n";
+	  //outDotFile<<"   wsRead="<<dec<<a->sumR<<" "<<setprecision(1)<<fixed<<a->sumR/(float) node->stat->n_appearance<<" ["<<dec<<a->minCntR<<", "<<a->maxCntR<<"]\\n";
+	  else
+	    outDotFile<<"   wsRead="<<dec<<a->minCntR<<"\\n";
+	}    
+	if(wsWriteFlag){
+	  if(a->minCntW!=a->maxCntW)
+	    //outDotFile<<"   wsWrite="<<dec<<a->sumW<<" "<<setprecision(1)<<fixed<<a->sumW/(float) node->stat->n_appearance<<" ["<<dec<<a->minCntW<<", "<<a->maxCntW<<"]\\n";
+	    outDotFile<<"   wsWrite="<<setprecision(1)<<fixed<<a->sumW/(float) node->stat->n_appearance<<" ["<<dec<<a->minCntW<<", "<<a->maxCntW<<"]\\n";
+	  else
+	    outDotFile<<"   wsWrite="<<dec<<a->minCntW<<"\\n";
+	}
+
+      }
 
       // end
 

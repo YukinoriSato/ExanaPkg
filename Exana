@@ -4,12 +4,15 @@
 #print ARGV
 
 dir=ENV['EXANA_DIR'] 
-
+pindir=ENV['PIN_DIR']
 # for pcc
 #dir="/work/dev-exana/ExanaPkg"
 
+command=dir + "/pin -t "+ pindir + "/source/tools/Exana/obj-intel64/Exana.so -cacheConfig " + dir + "/cache.config"
+#command=dir+"/pin -t ~/pin/source/tools/Exana/obj-intel64/loopContextProf.so"
+
 # for ExanaPkg release
-command="pin -t "+ dir + "/pintool/Exana.so"
+#command=dir+"/pin -t "+ dir + "/pintool/loopContextProf.so -cacheConfig "+dir+"/cache.config"
 
 
 for f in ARGV	
