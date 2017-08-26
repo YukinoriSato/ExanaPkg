@@ -1,0 +1,594 @@
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/bk-deps g++ -c -o exanav_exanav.o -D__WXGTK__      -I. -DWXUSINGDLL -I/home/usr0/yuki-t-ab/ytData/exanav/github0903/wxWidgets-master/build_gtk/samples -Wall -Wundef -Wunused-parameter -Wno-ctor-dtor-privacy -Woverloaded-virtual  -D_FILE_OFFSET_BITS=64 -I/home/yukinori/ExanaPkg/ExanaView/wxWidgets/build_gtk/lib/wx/include/gtk2-unicode-3.1 -I/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include -pthread -I/usr/include/gtk-2.0 -I/usr/lib64/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12 -pthread -I/usr/include/gstreamer-0.10 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libxml2 -DWX_PRECOMP -pthread -O2 -fno-strict-aliasing -I/usr/include/gtk-2.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/lib64/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12 -I/usr/include/gtk-unix-print-2.0 -I/usr/include/gtk-2.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/lib64/gtk-2.0/include -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12 -fvisibility=hidden -fvisibility-inlines-hidden ./exanav.cpp
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:20 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:12 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/platform.h:136:22: error: wx/setup.h: そのようなファイルやディレクトリはありません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/platform.h:141:5: 警告: "wxUSE_TOGGLEBTN" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/platform.h:141:24: 警告: "wxUSE_BUTTON" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/platform.h:489 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:20 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:12 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:88:9: error: #error "wxUSE_ANY must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:96:9: error: #error "wxUSE_COMPILER_TLS must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:104:9: error: #error "wxUSE_CONSOLE_EVENTLOOP must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:112:9: error: #error "wxUSE_DYNLIB_CLASS must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:120:9: error: #error "wxUSE_EXCEPTIONS must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:128:9: error: #error "wxUSE_FILE_HISTORY must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:136:9: error: #error "wxUSE_FILESYSTEM must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:144:9: error: #error "wxUSE_FS_ARCHIVE must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:152:9: error: #error "wxUSE_FSVOLUME must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:160:9: error: #error "wxUSE_FSWATCHER must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:168:9: error: #error "wxUSE_DYNAMIC_LOADER must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:176:9: error: #error "wxUSE_INTL must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:184:9: error: #error "wxUSE_IPV6 must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:192:9: error: #error "wxUSE_LOG must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:200:9: error: #error "wxUSE_LONGLONG must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:208:9: error: #error "wxUSE_MIMETYPE must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:216:9: error: #error "wxUSE_ON_FATAL_EXCEPTION must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:224:9: error: #error "wxUSE_PRINTF_POS_PARAMS must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:232:9: error: #error "wxUSE_PROTOCOL must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:239:6: 警告: "wxUSE_PROTOCOL" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:274:9: error: #error "wxUSE_REGEX must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:282:9: error: #error "wxUSE_STDPATHS must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:290:9: error: #error "wxUSE_XML must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:298:9: error: #error "wxUSE_SOCKETS must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:306:9: error: #error "wxUSE_STD_CONTAINERS must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:314:9: error: #error "wxUSE_STD_CONTAINERS_COMPATIBLY must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:322:9: error: #error "wxUSE_STD_STRING_CONV_IN_WXSTRING must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:330:9: error: #error "wxUSE_STREAMS must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:338:9: error: #error "wxUSE_STOPWATCH must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:346:9: error: #error "wxUSE_TEXTBUFFER must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:354:9: error: #error "wxUSE_TEXTFILE must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:370:9: error: #error "wxUSE_URL must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:378:9: error: #error "wxUSE_VARIANT must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:386:9: error: #error "wxUSE_XLOCALE must be defined, please read comment near the top of this file."
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:397:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1249 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/platform.h:489 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:20 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:12 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/gtk/chkconf.h:11:9: 警告: "wxUSE_MDI_ARCHITECTURE" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/gtk/chkconf.h:21:5: 警告: "wxUSE_JOYSTICK" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/gtk/chkconf.h:32:5: 警告: "wxUSE_POSTSCRIPT_ARCHITECTURE_IN_MSW" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/gtk/chkconf.h:37:5: 警告: "wxUSE_OWNER_DRAWN" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/gtk/chkconf.h:42:5: 警告: "wxUSE_METAFILE" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/gtk/chkconf.h:47:5: 警告: "wxUSE_ENH_METAFILE" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1267 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/platform.h:489 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:20 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:12 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/unix/chkconf.h:12:5: 警告: "wxUSE_CONSOLE_EVENTLOOP" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/unix/chkconf.h:23:5: 警告: "wxUSE_FSWATCHER" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/unix/chkconf.h:34:5: 警告: "wxUSE_GSTREAMER" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/platform.h:489 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:20 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:12 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1278:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1289:5: 警告: "wxUSE_ARCHIVE_STREAMS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1311:5: 警告: "wxUSE_URL" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1322:5: 警告: "wxUSE_PROTOCOL" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1345:5: 警告: "wxUSE_HTML" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1356:5: 警告: "wxUSE_FS_ARCHIVE" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1375:5: 警告: "wxUSE_FILESYSTEM" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1396:5: 警告: "wxUSE_FS_INET" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1407:5: 警告: "wxUSE_STOPWATCH" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1407:24: 警告: "wxUSE_DATETIME" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1418:5: 警告: "wxUSE_MIMETYPE" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1427:5: 警告: "wxUSE_TEXTFILE" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1436:5: 警告: "wxUSE_TEXTFILE" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1445:6: 警告: "wxUSE_DYNLIB_CLASS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1446:8: 警告: "wxUSE_DYNAMIC_LOADER" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1455:5: 警告: "wxUSE_ZIPSTREAM" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1474:5: 警告: "wxUSE_TARSTREAM" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chkconf.h:1488:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:20 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:12 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/platform.h:513:6: 警告: "wxUSE_IOSTREAMH" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/platform.h:556:9: 警告: "wxUSE_CONFIG" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:12 から include されたファイル中,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:54:6: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/debug.h:17 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:717 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:12 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/chartype.h:37:6: error: #error "wchar_t must be available"
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:12 から include されたファイル中,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:854:5: 警告: "wxUSE_STREAMS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:887:6: 警告: "wxUSE_IOSTREAMH" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:1078:7: 警告: "SIZEOF_LONG" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:1172:7: 警告: "wxUSE_LONGLONG" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:1245:5: 警告: "SIZEOF_LONG" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:1507:7: 警告: "wxUSE_LONGLONG" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:1674:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:2109:27: 警告: "wxUSE_AUTOID_MANAGEMENT" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:2306:29: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:3375:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/unichar.h:15 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/strvararg.h:19 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:37 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/memory.h:15 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/object.h:19 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:15 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/stringimpl.h:63:5: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/stringimpl.h:63:33: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/stringimpl.h:84:5: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/stringimpl.h:322:5: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:37 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/memory.h:15 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/object.h:19 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:15 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/strvararg.h:163:19: 警告: "SIZEOF_LONG" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/strvararg.h:694:5: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/memory.h:15 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/object.h:19 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:15 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:109:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:707:5: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:1091:8: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:1199:5: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:1218:5: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:1506:6: 警告: "wxUSE_STD_STRING_CONV_IN_WXSTRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:1794:5: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:1858:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:2199:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:3007:5: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:3271:6: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:3302:6: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:3552:6: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:3699:5: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:3730:5: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:3956:5: 警告: "wxUSE_STD_IOSTREAM" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:4153:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/memory.h:16 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/object.h:19 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:15 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/msgout.h:106:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/object.h:19 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:15 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/memory.h:18:5: 警告: "wxUSE_MEMORY_TRACING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/memory.h:18:29: 警告: "wxUSE_DEBUG_CONTEXT" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/object.h:56 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:15 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/xti.h:36:5: 警告: "wxUSE_EXTENDED_RTTI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/object.h:57 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:15 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/rtti.h:15:6: 警告: "wxUSE_EXTENDED_RTTI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/rtti.h:199 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/object.h:57 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:15 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/flags.h:155:5: 警告: "wxUSE_EXTENDED_RTTI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/flags.h:172:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:15 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/object.h:179:5: 警告: "wxUSE_MEMORY_TRACING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/object.h:436 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:15 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/xti2.h:18:5: 警告: "wxUSE_EXTENDED_RTTI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:15 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/object.h:442:5: 警告: "wxUSE_DEBUG_NEW_ALWAYS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:16 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/dynarray.h:16:5: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/dynarray.h:83:5: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/dynarray.h:334:5: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/list.h:34 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:17 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/vector.h:17:5: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/scopeguard.h:23 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/vector.h:31 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/list.h:34 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:17 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/except.h:24:6: 警告: "wxUSE_EXCEPTIONS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/vector.h:32 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/list.h:34 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:17 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/meta/movable.h:40:6: 警告: "wxUSE_STD_STRING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/list.h:34 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:17 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/vector.h:488:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/vector.h:524:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/vector.h:573:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:17 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/list.h:36:5: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/list.h:51:5: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/list.h:1125:6: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/list.h:1163:8: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/list.h:1170:6: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/list.h:1194:6: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:18 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/hash.h:17:6: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/hash.h:82:6: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/hashmap.h:15 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:20 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:969:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:20 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/hashmap.h:30:5: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/hashmap.h:44:7: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/hashmap.h:595:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:21 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/arrstr.h:17:5: 警告: "wxUSE_STD_CONTAINERS_COMPATIBLY" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/arrstr.h:50:5: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/arrstr.h:481:5: 警告: "wxUSE_STD_CONTAINERS_COMPATIBLY" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/intl.h:17 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:22 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/translation.h:18:5: 警告: "wxUSE_INTL" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:22 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/intl.h:29:5: 警告: "wxUSE_INTL" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:23 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/log.h:26:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/log.h:52:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/log.h:56:5: 警告: "wxUSE_LOG" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/log.h:1382:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:24 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/event.h:19:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/event.h:26 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:24 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/thread.h:22:5: 警告: "wxUSE_THREADS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/thread.h:847:5: 警告: "wxUSE_THREADS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/event.h:29 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:24 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/any.h:16:5: 警告: "wxUSE_ANY" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:24 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/event.h:48:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/event.h:720:5: 警告: "wxUSE_SPINBTN" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/event.h:1175:5: 警告: "wxUSE_ANY" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/event.h:1474:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/event.h:3264:5: 警告: "wxUSE_MEMORY_TRACING" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/event.h:3390:5: 警告: "wxUSE_THREADS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/event.h:3665:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/event.h:3686:5: 警告: "wxUSE_THREADS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/event.h:3826:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/event.h:4372:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/app.h:21 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:25 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/build.h:83:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/build.h:88:5: 警告: "WXWIN_COMPATIBILITY_3_0" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/build.h:95:5: 警告: "wxUSE_STD_CONTAINERS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/app.h:23 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:25 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/init.h:57:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:25 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/app.h:33:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/app.h:194:5: 警告: "wxUSE_CMDLINE_PARSER" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/app.h:273:5: 警告: "wxUSE_EXCEPTIONS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/app.h:527:5: 警告: "wxUSE_THREADS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/app.h:553:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/utils.h:20 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:26 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/filefn.h:465:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/filefn.h:619:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/filefn.h:636:5: 警告: "wxUSE_DATETIME" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/utils.h:23 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:26 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/meta/implicitconversion.h:67:29: 警告: "SIZEOF_LONG" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:26 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/utils.h:25:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/utils.h:35 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:26 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/longlong.h:17:5: 警告: "wxUSE_LONGLONG" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:26 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/utils.h:103:5: 警告: "wxUSE_LONGLONG" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/utils.h:113:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/utils.h:132:5: 警告: "wxUSE_MSGDLG" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/utils.h:168:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/utils.h:490:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/utils.h:501:5: 警告: "wxUSE_ON_FATAL_EXCEPTION" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/utils.h:522:5: 警告: "WXWIN_COMPATIBILITY_2_8" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/utils.h:584:5: 警告: "wxUSE_LONGLONG" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/utils.h:607:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:27 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/stream.h:16:5: 警告: "wxUSE_STREAMS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:29 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/math.h:153:5: 警告: "wxUSE_APPLE_IEEE" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/stopwatch.h:21 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:30 から,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/time.h:24:5: 警告: "wxUSE_LONGLONG" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/time.h:35:5: 警告: "wxUSE_LONGLONG" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/time.h:60:5: 警告: "wxUSE_THREADS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/time.h:70:5: 警告: "wxUSE_THREADS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:30 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/stopwatch.h:27:5: 警告: "wxUSE_STOPWATCH" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:31 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/timer.h:17:5: 警告: "wxUSE_TIMER" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:34 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrtvararg.h:95:5: 警告: "wxUSE_PRINTF_POS_PARAMS" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42 から include されたファイル中,
+                 ./exanav.cpp:11 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:36:5: 警告: "wxUSE_GUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/confbase.h:19 から include されたファイル中,
+                 /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/config.h:14 から,
+                 ./exanav.cpp:26 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/base64.h:12:5: 警告: "wxUSE_BASE64" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/config.h:14 から include されたファイル中,
+                 ./exanav.cpp:26 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/confbase.h:43:5: 警告: "wxUSE_CONFIG" は定義されていません
+./exanav.cpp:26 から include されたファイル中:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/config.h:16:5: 警告: "wxUSE_CONFIG" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/aui/aui.h:14 から include されたファイル中,
+                 ./exanav.cpp:31 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/aui/framemanager.h:20:5: 警告: "wxUSE_AUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/aui/aui.h:15 から include されたファイル中,
+                 ./exanav.cpp:31 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/aui/dockart.h:20:5: 警告: "wxUSE_AUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/aui/aui.h:16 から include されたファイル中,
+                 ./exanav.cpp:31 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/aui/floatpane.h:21:5: 警告: "wxUSE_AUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/aui/aui.h:17 から include されたファイル中,
+                 ./exanav.cpp:31 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/aui/auibar.h:16:5: 警告: "wxUSE_AUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/aui/aui.h:18 から include されたファイル中,
+                 ./exanav.cpp:31 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/aui/auibook.h:22:5: 警告: "wxUSE_AUI" は定義されていません
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/aui/aui.h:19 から include されたファイル中,
+                 ./exanav.cpp:31 から:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/aui/tabmdi.h:14:5: 警告: "wxUSE_AUI" は定義されていません
+./exanav.cpp:32 から include されたファイル中:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/dataview.h:16:5: 警告: "wxUSE_DATAVIEWCTRL" は定義されていません
+./exanav.cpp:33 から include されたファイル中:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/variant.h:16:5: 警告: "wxUSE_VARIANT" は定義されていません
+./exanav.cpp:35 から include されたファイル中:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/stc/stc.h:35:5: 警告: "wxUSE_STC" は定義されていません
+./exanav.cpp:37 から include されたファイル中:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/dir.h:158:5: 警告: "wxUSE_LONGLONG" は定義されていません
+./exanav.cpp:924:5: 警告: "wxUSE_STATUSBAR" は定義されていません
+In file included from /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:12,
+                 from ./exanav.cpp:11:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:1035: error: zero width for bit-field ‘wxAssert_1035::SizeTMustBeExactly4Bytes’
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:1036: error: zero width for bit-field ‘wxAssert_1036::PtrMustBeExactly4Bytes’
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:1053: error: zero width for bit-field ‘wxAssert_1054::Wchar_tMustBeExactly2Bytes’
+In file included from /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/string.h:31,
+                 from /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/memory.h:15,
+                 from /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/object.h:19,
+                 from /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:15,
+                 from /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42,
+                 from ./exanav.cpp:11:
+/usr/include/stdio.h:103: error: conflicting declaration ‘typedef __ssize_t ssize_t’
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/defs.h:1217: error: ‘ssize_t’ has a previous declaration as ‘typedef wxInt32 ssize_t’
+In file included from /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/hashmap.h:15,
+                 from /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wx.h:20,
+                 from /home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxprec.h:42,
+                 from ./exanav.cpp:11:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrcpy(wchar_t*, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:211: error: ‘wcscpy’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrcpy(wchar_t*, const wxString&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:219: error: ‘wcscpy’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrcpy(wchar_t*, const wxCStrData&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:221: error: ‘wcscpy’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrcpy(wchar_t*, const wxScopedWCharBuffer&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:223: error: ‘wcscpy’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrcpy(wchar_t*, const char*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:227: error: ‘wcscpy’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrncpy(wchar_t*, const wchar_t*, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:232: error: ‘wcsncpy’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrncpy(wchar_t*, const wxString&, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:240: error: ‘wcsncpy’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrncpy(wchar_t*, const wxCStrData&, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:242: error: ‘wcsncpy’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrncpy(wchar_t*, const wxScopedWCharBuffer&, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:244: error: ‘wcsncpy’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrncpy(wchar_t*, const char*, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:248: error: ‘wcsncpy’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrlcpy(wchar_t*, const wchar_t*, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:273: error: ‘wcsncpy’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrcat(wchar_t*, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:283: error: ‘wcscat’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrcat(wchar_t*, const wxString&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:291: error: ‘wcscat’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrcat(wchar_t*, const wxCStrData&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:293: error: ‘wcscat’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrcat(wchar_t*, const wxScopedWCharBuffer&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:295: error: ‘wcscat’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrcat(wchar_t*, const char*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:299: error: ‘wcscat’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrncat(wchar_t*, const wchar_t*, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:304: error: ‘wcsncat’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrncat(wchar_t*, const wxString&, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:312: error: ‘wcsncat’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrncat(wchar_t*, const wxCStrData&, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:314: error: ‘wcsncat’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrncat(wchar_t*, const wxScopedWCharBuffer&, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:316: error: ‘wcsncat’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘wchar_t* wxStrncat(wchar_t*, const char*, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:320: error: ‘wcsncat’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘int wxStrcmp(const wchar_t*, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:454: error: ‘wcscmp’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘int wxStrcmp(const wchar_t*, const wxScopedWCharBuffer&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:454: error: ‘wcscmp’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘int wxStrcmp(const wxScopedWCharBuffer&, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:454: error: ‘wcscmp’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘int wxStrcmp(const wxScopedWCharBuffer&, const wxScopedWCharBuffer&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:454: error: ‘wcscmp’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘int wxStrcoll(const wchar_t*, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:495: error: ‘wcscoll’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘int wxStrcoll(const wchar_t*, const wxScopedWCharBuffer&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:495: error: ‘wcscoll’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘int wxStrcoll(const wxScopedWCharBuffer&, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:495: error: ‘wcscoll’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘int wxStrcoll(const wxScopedWCharBuffer&, const wxScopedWCharBuffer&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:495: error: ‘wcscoll’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrspn(const wchar_t*, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:506: error: ‘wcsspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrspn(const wchar_t*, const wxScopedWCharBuffer&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:506: error: ‘wcsspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrspn(const wxScopedWCharBuffer&, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:506: error: ‘wcsspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrspn(const wxScopedWCharBuffer&, const wxScopedWCharBuffer&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:506: error: ‘wcsspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrspn(const wchar_t*, const wxCStrData&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:506: error: ‘wcsspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrspn(const wchar_t*, const wxString&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:506: error: ‘wcsspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrspn(const wxScopedWCharBuffer&, const wxCStrData&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:506: error: ‘wcsspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrspn(const wxScopedWCharBuffer&, const wxString&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:506: error: ‘wcsspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrcspn(const wchar_t*, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:514: error: ‘wcscspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrcspn(const wchar_t*, const wxScopedWCharBuffer&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:514: error: ‘wcscspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrcspn(const wxScopedWCharBuffer&, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:514: error: ‘wcscspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrcspn(const wxScopedWCharBuffer&, const wxScopedWCharBuffer&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:514: error: ‘wcscspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrcspn(const wchar_t*, const wxCStrData&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:514: error: ‘wcscspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrcspn(const wchar_t*, const wxString&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:514: error: ‘wcscspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrcspn(const wxScopedWCharBuffer&, const wxCStrData&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:514: error: ‘wcscspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrcspn(const wxScopedWCharBuffer&, const wxString&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:514: error: ‘wcscspn’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘int wxStrncmp(const wchar_t*, const wchar_t*, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:524: error: ‘wcsncmp’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘int wxStrncmp(const wchar_t*, const wxScopedWCharBuffer&, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:524: error: ‘wcsncmp’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘int wxStrncmp(const wxScopedWCharBuffer&, const wchar_t*, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:524: error: ‘wcsncmp’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘int wxStrncmp(const wxScopedWCharBuffer&, const wxScopedWCharBuffer&, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:524: error: ‘wcsncmp’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrxfrm(wchar_t*, const wchar_t*, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:542: error: ‘wcsxfrm’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrxfrm(wchar_t*, const wxString&, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:549: error: ‘wcsxfrm’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘size_t wxStrxfrm(wchar_t*, const wxCStrData&, size_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:553: error: ‘wcsxfrm’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrstr(const wchar_t*, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:576: error: ‘wcsstr’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrstr(const wchar_t*, const wxString&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:580: error: ‘wcsstr’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrstr(const wxString&, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:595: error: ‘wcsstr’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrstr(const wxCStrData&, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:597: error: ‘wcsstr’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrchr(const wchar_t*, wchar_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:602: error: ‘wcschr’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrrchr(const wchar_t*, wchar_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:606: error: ‘wcsrchr’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrchr(const wchar_t*, const wxUniChar&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:610: error: ‘wcschr’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrrchr(const wchar_t*, const wxUniChar&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:614: error: ‘wcsrchr’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrchr(const wchar_t*, const wxUniCharRef&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:618: error: ‘wcschr’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrrchr(const wchar_t*, const wxUniCharRef&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:622: error: ‘wcsrchr’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrchr(const wxString&, wchar_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:660: error: ‘wcschr’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrrchr(const wxString&, wchar_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:662: error: ‘wcsrchr’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrchr(const wxCStrData&, wchar_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:680: error: ‘wcschr’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrrchr(const wxCStrData&, wchar_t)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:682: error: ‘wcsrchr’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrpbrk(const wchar_t*, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:687: error: ‘wcspbrk’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrpbrk(const wchar_t*, const wxString&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:693: error: ‘wcspbrk’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrpbrk(const wchar_t*, const wxCStrData&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:695: error: ‘wcspbrk’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrpbrk(const wxString&, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:701: error: ‘wcspbrk’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘const wchar_t* wxStrpbrk(const wxCStrData&, const wchar_t*)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:709: error: ‘wcspbrk’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘long int wxAtol(const wxString&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:800: error: ‘wcstol’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘double wxAtof(const wxString&)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:806: error: ‘wcstod’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘double wxStrtod(const wchar_t*, wchar_t**)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:814: error: ‘wcstod’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘long int wxStrtol(const wchar_t*, wchar_t**, int)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:899: error: ‘wcstol’ was not declared in this scope
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h: In function ‘long unsigned int wxStrtoul(const wchar_t*, wchar_t**, int)’:
+/home/yukinori/ExanaPkg/ExanaView/wxWidgets/include/wx/wxcrt.h:900: error: ‘wcstoul’ was not declared in this scope
+./exanav.cpp: At global scope:
+./exanav.cpp:75: error: expected constructor, destructor, or type conversion before ‘<’ token
+make: *** [exanav_exanav.o] エラー 1

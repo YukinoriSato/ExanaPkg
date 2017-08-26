@@ -1,0 +1,129 @@
+ + main (@0x0)  5967192944 207  100.00 % (0.00 %)   iBF=  3.9 (37) #appear: 1  mem R=12417669173 (160)  W=921272896 (284)
+ . + 17  (@0x401030)  12058566 2691  0.20 % (0.00 %)   iBF=None, mem=28341248  Avg. itr cnt:  65.00  max/min: 65/65  #appear: 1
+ . . + 18  (@0x401040)  12055875 158275  0.20 % (0.00 %)   iBF=None, mem=28337920  Avg. itr cnt:  65.00  max/min: 65/65  #appear: 65
+ . . . + 19  (@0x401080)  11897600 11897600  0.20 % (0.20 %)   iBF=None, mem=28121600  Avg. itr cnt:  129.00  max/min: 129/129  #appear: 4225
+ . + 20  (@0x401139)  11600533 2901  0.19 % (0.00 %)   iBF=4.3e+05 63/27262924 (52)  Avg. itr cnt:  64.00  max/min: 64/64  #appear: 1
+ . . + 21  (@0x401158)  11597632 153408  0.19 % (0.00 %)   iBF=None, mem=27259648  Avg. itr cnt:  64.00  max/min: 64/64  #appear: 64
+ . . . + 22  (@0x401198)  11444224 11444224  0.19 % (0.19 %)   iBF=None, mem=27049984  Avg. itr cnt:  128.00  max/min: 128/128  #appear: 4096
+ . + .plt (@0x400430)  9 9  0.00 % (0.00 %)   iBF=None #appear: 5  mem R=56 (56)  W=16 (16)
+ . + _dl_runtime_resolve (@0x3c00c147d0)  2149 63  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=3621 (216)  W=2016 (192)
+ . . + _dl_fixup (@0x3c00c0df60)  2086 240  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=3405 (588)  W=1824 (228)
+ . . . + _dl_lookup_symbol_x (@0x3c00c09d60)  1846 252  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=2817 (468)  W=1596 (396)
+ . . . . + 172  (_dl_lookup_symbol_x)  171 171  0.00 % (0.00 %)   iBF=None, mem=19  Avg. itr cnt:  7.33  max/min: 12/4  #appear: 3
+ . . . . + 173  (_dl_lookup_symbol_x)  1423 51  0.00 % (0.00 %)   iBF=None, mem=3530    |irreducible|  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 3  mem R=2330 (144)  W=1200 (144)
+ . . . . . + do_lookup_x (@0x3c00c093a0)  1372 159  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=2186 (444)  W=1056 (420)
+ . . . . . . + 161  (do_lookup_x)  1213 370  0.00 % (0.00 %)   iBF=None, mem=2378    |irreducible|  Avg. itr cnt:  2.00  max/min: 2/2  #appear: 3  mem R=1742 (701)  W=636 (252)
+ . . . . . . . + _dl_name_match_p (@0x3c00c0eec0)  117 51  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=228 (120)  W=96 (72)
+ . . . . . . . . + strcmp (@0x3c00c17500)  21 12  0.00 % (0.00 %)   iBF=None #appear: 3
+ . . . . . . . . . + 419  (strcmp)  9 9  0.00 % (0.00 %)   iBF=None, mem=6  Avg. itr cnt:  inf  max/min: 1/0  #appear: 0
+ . . . . . . . . + 254  (_dl_name_match_p)  45 24  0.00 % (0.00 %)   iBF=None, mem=102    |irreducible|  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 3  mem R=78 (48)  W=24 (24)
+ . . . . . . . . . + strcmp (@0x3c00c17500)  21 12  0.00 % (0.00 %)   iBF=None #appear: 3
+ . . . . . . . . . . + 419  (strcmp)  9 9  0.00 % (0.00 %)   iBF=None, mem=6  Avg. itr cnt:  inf  max/min: 1/0  #appear: 0
+ . . . . . . . + 170  (do_lookup_x)  726 110  0.00 % (0.00 %)   iBF=None, mem=1101  Avg. itr cnt:  2.33  max/min: 4/1  #appear: 3  mem R=813 (184)  W=288 (120)
+ . . . . . . . . + check_match.12439 (@0x3c00c09230)  616 177  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=629 (459)  W=168 (168)
+ . . . . . . . . . + strcmp (@0x3c00c17500)  439 12  0.00 % (0.00 %)   iBF=None #appear: 6
+ . . . . . . . . . . + 419  (strcmp)  427 427  0.00 % (0.00 %)   iBF=None, mem=122  Avg. itr cnt:  inf  max/min: 13/0  #appear: 0
+ . + printf (@0x7f749dbdf0f0)  13785 128  0.00 % (0.00 %)   iBF=None #appear: 5  mem R=19504 (120)  W=12865 (408)
+ . . + vfprintf (@0x7f749dbd3fd0)  13657 2554  0.00 % (0.00 %)   iBF=None #appear: 5  mem R=19384 (3834)  W=12457 (3445)
+ . . . + strchrnul (@0x7f749dc1aaf0)  449 368  0.00 % (0.00 %)   iBF=None #appear: 16
+ . . . . + 1392  (strchrnul)  81 81  0.00 % (0.00 %)   iBF=None, mem=144  Avg. itr cnt:  1.12  max/min: 2/1  #appear: 8
+ . . . + _IO_file_xsputn (@0x7f749dc016e0)  4219 1937  0.00 % (0.00 %)   iBF=None #appear: 24  mem R=4473 (2060)  W=2928 (1429)
+ . . . . + _IO_file_overflow (@0x7f749dc02290)  745 172  0.00 % (0.00 %)   iBF=None #appear: 6  mem R=1304 (304)  W=996 (228)
+ . . . . . + _IO_doallocbuf (@0x7f749dc03780)  101 13  0.00 % (0.00 %)   iBF=None #appear: 1  mem R=165 (41)  W=96 (16)
+ . . . . . . + _IO_file_doallocate (@0x7f749dbf6270)  88 51  0.00 % (0.00 %)   iBF=None #appear: 1  mem R=124 (68)  W=80 (44)
+ . . . . . . . + _IO_file_stat (@0x7f749dc01b70)  14 4  0.00 % (0.00 %)   iBF=None #appear: 1
+ . . . . . . . . + __fxstat (@0x7f749dc6af10)  10 10  0.00 % (0.00 %)   iBF=None #appear: 1
+ . . . . . . . + mmap64 (@0x7f749dc753b0)  6 6  0.00 % (0.00 %)   iBF=None #appear: 1
+ . . . . . . . + _IO_setb (@0x7f749dc04420)  17 17  0.00 % (0.00 %)   iBF=None #appear: 1  mem R=36 (36)  W=36 (36)
+ . . . . . + _IO_do_write (@0x7f749dc02ff0)  472 262  0.00 % (0.00 %)   iBF=None #appear: 1  mem R=835 (510)  W=672 (472)
+ . . . . . . + _IO_file_write (@0x7f749dc01a90)  210 120  0.00 % (0.00 %)   iBF=None #appear: 5  mem R=325 (240)  W=200 (160)
+ . . . . . . . + 1264  (_IO_file_write)  90 55  0.00 % (0.00 %)   iBF=None, mem=125    |irreducible|  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 5  mem R=85 (25)  W=40 (40)
+ . . . . . . . . + write (@0x7f749dc6b5f0)  35 35  0.00 % (0.00 %)   iBF=None #appear: 5
+ . . . . + _IO_default_xsputn (@0x7f749dc04570)  411 25  0.00 % (0.00 %)   iBF=None #appear: 1  mem R=840 (64)  W=368 (40)
+ . . . . . + 1276  (_IO_default_xsputn)  386 122  0.00 % (0.00 %)   iBF=None, mem=1104    |irreducible|  Avg. itr cnt:  9.00  max/min: 9/9  #appear: 1  mem R=776 (264)  W=328 (64)
+ . . . . . . + _IO_file_overflow (@0x7f749dc02290)  264 264  0.00 % (0.00 %)   iBF=None #appear: 8  mem R=512 (512)  W=264 (264)
+ . . . . + 1262  (_IO_file_xsputn)  590 590  0.00 % (0.00 %)   iBF=None, mem=118  Avg. itr cnt:  7.56  max/min: 29/1  #appear: 18
+ . . . . + 1263  (_IO_file_xsputn)  468 468  0.00 % (0.00 %)   iBF=None, mem=156  Avg. itr cnt:  4.71  max/min: 10/1  #appear: 21  mem R=78 (78)  W=78 (78)
+ . . . . + mempcpy (@0x7f749dc14500)  68 68  0.00 % (0.00 %)   iBF=None #appear: 2  mem R=73 (73)  W=57 (57)
+ . . . . . + 1346  (mempcpy)  0 0  0.00 % (0.00 %)   iBF=None, mem=0  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 2
+ . . . + _itoa_word (@0x7f749dbd39e0)  308 176  0.00 % (0.00 %)   iBF=None #appear: 8  mem R=83 (72)  W=19 (8)
+ . . . . + 1120  (_itoa_word)  132 132  0.00 % (0.00 %)   iBF=None, mem=22  Avg. itr cnt:  2.38  max/min: 4/1  #appear: 8  mem R=11 (11)  W=11 (11)
+ . . . + .plt (@0x7f749dbaea68)  10 10  0.00 % (0.00 %)   iBF=None #appear: 10
+ . . . + __libc_free (@0x7f749dc0b520)  70 70  0.00 % (0.00 %)   iBF=None #appear: 10
+ . . . + __printf_fp (@0x7f749dbd9bc0)  6047 1245  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=10146 (1893)  W=6065 (1609)
+ . . . . + __isnan (@0x7f749dbc1920)  21 21  0.00 % (0.00 %)   iBF=None #appear: 3
+ . . . . + isinf (@0x7f749dbc18e0)  39 39  0.00 % (0.00 %)   iBF=None #appear: 3
+ . . . . + __mpn_extract_double (@0x7f749dbd3350)  69 69  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=48 (48)  W=92 (92)
+ . . . . + __mpn_lshift (@0x7f749dbd1cb0)  45 45  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=48 (48)  W=24 (24)
+ . . . . + 1139  (__printf_fp)  311 185  0.00 % (0.00 %)   iBF=None, mem=684    |irreducible|  Avg. itr cnt:  13.00  max/min: 13/13  #appear: 1  mem R=488 (296)  W=196 (76)
+ . . . . . + memcpy (@0x7f749dc19670)  46 46  0.00 % (0.00 %)   iBF=None #appear: 2  mem R=48 (48)  W=32 (32)
+ . . . . . . + 1360  (memcpy)  0 0  0.00 % (0.00 %)   iBF=None, mem=0  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 2
+ . . . . . + __mpn_cmp (@0x7f749dbd17c0)  22 14  0.00 % (0.00 %)   iBF=None #appear: 2
+ . . . . . . + 1045  (__mpn_cmp)  8 8  0.00 % (0.00 %)   iBF=None, mem=32    |irreducible|  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 2
+ . . . . . + __mpn_mul (@0x7f749dbd1dd0)  58 35  0.00 % (0.00 %)   iBF=None #appear: 1  mem R=96 (72)  W=88 (72)
+ . . . . . . + __mpn_mul_1 (@0x7f749dbd2390)  23 15  0.00 % (0.00 %)   iBF=None #appear: 1  mem R=24 (16)  W=16 (8)
+ . . . . . . . + 1073  (__mpn_mul_1)  8 8  0.00 % (0.00 %)   iBF=None, mem=16  Avg. itr cnt:  2.00  max/min: 2/2  #appear: 1  mem R=8 (8)  W=8 (8)
+ . . . . + __mpn_rshift (@0x7f749dbd1d20)  75 75  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=72 (72)  W=48 (48)
+ . . . . . + 1056  (__mpn_rshift)  0 0  0.00 % (0.00 %)   iBF=None, mem=0  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 3
+ . . . . + 1140  (__printf_fp)  395 22  0.00 % (0.00 %)   iBF=None, mem=1424  Avg. itr cnt:  2.00  max/min: 3/1  #appear: 2
+ . . . . . + hack_digit.15672 (@0x7f749dbd9830)  373 172  0.00 % (0.00 %)   iBF=None #appear: 4  mem R=848 (456)  W=544 (224)
+ . . . . . . + __mpn_divrem (@0x7f749dbd1860)  141 141  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=328 (328)  W=288 (288)
+ . . . . . . . + 1053  (__mpn_divrem)  0 0  0.00 % (0.00 %)   iBF=None, mem=0  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 2
+ . . . . . . + __mpn_mul_1 (@0x7f749dbd2390)  60 60  0.00 % (0.00 %)   iBF=None #appear: 4  mem R=64 (64)  W=32 (32)
+ . . . . . . . + 1073  (__mpn_mul_1)  0 0  0.00 % (0.00 %)   iBF=None, mem=0  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 4
+ . . . . + 1141  (__printf_fp)  1431 225  0.00 % (0.00 %)   iBF=None, mem=4404    |irreducible|  Avg. itr cnt:  7.00  max/min: 7/7  #appear: 3  mem R=2676 (156)  W=1728 (216)
+ . . . . . + hack_digit.15672 (@0x7f749dbd9830)  1206 642  0.00 % (0.00 %)   iBF=None #appear: 18  mem R=2520 (1560)  W=1512 (792)
+ . . . . . . + __mpn_divrem (@0x7f749dbd1860)  294 294  0.00 % (0.00 %)   iBF=None #appear: 6  mem R=672 (672)  W=576 (576)
+ . . . . . . . + 1053  (__mpn_divrem)  0 0  0.00 % (0.00 %)   iBF=None, mem=0  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 6
+ . . . . . . + __mpn_mul_1 (@0x7f749dbd2390)  270 270  0.00 % (0.00 %)   iBF=None #appear: 18  mem R=288 (288)  W=144 (144)
+ . . . . . . . + 1073  (__mpn_mul_1)  0 0  0.00 % (0.00 %)   iBF=None, mem=0  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 18
+ . . . . + hack_digit.15672 (@0x7f749dbd9830)  201 107  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=420 (260)  W=252 (132)
+ . . . . . + __mpn_divrem (@0x7f749dbd1860)  49 49  0.00 % (0.00 %)   iBF=None #appear: 1  mem R=112 (112)  W=96 (96)
+ . . . . . . + 1053  (__mpn_divrem)  0 0  0.00 % (0.00 %)   iBF=None, mem=0  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 1
+ . . . . . + __mpn_mul_1 (@0x7f749dbd2390)  45 45  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=48 (48)  W=24 (24)
+ . . . . . . + 1073  (__mpn_mul_1)  0 0  0.00 % (0.00 %)   iBF=None, mem=0  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 3
+ . . . . + 1143  (__printf_fp)  6 6  0.00 % (0.00 %)   iBF=None, mem=0  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 3
+ . . . . + __GI_strlen (@0x7f749dc11160)  42 42  0.00 % (0.00 %)   iBF=None #appear: 3
+ . . . . + 1151  (__printf_fp)  357 303  0.00 % (0.00 %)   iBF=None, mem=249    |irreducible|  Avg. itr cnt:  10.00  max/min: 12/8  #appear: 3  mem R=195 (168)  W=54 (51)
+ . . . . . + mempcpy (@0x7f749dc14500)  54 54  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=27 (27)  W=3 (3)
+ . . . . + 1150  (__printf_fp)  1686 516  0.00 % (0.00 %)   iBF=None, mem=4740    |irreducible|  Avg. itr cnt:  11.00  max/min: 13/9  #appear: 3  mem R=3270 (750)  W=1470 (480)
+ . . . . . + __overflow (@0x7f749dc03750)  180 180  0.00 % (0.00 %)   iBF=None #appear: 30
+ . . . . . + _IO_file_overflow (@0x7f749dc02290)  990 990  0.00 % (0.00 %)   iBF=None #appear: 30  mem R=1920 (1920)  W=990 (990)
+ . . . . + 1158  (__printf_fp)  101 101  0.00 % (0.00 %)   iBF=None, mem=44    |irreducible|  Avg. itr cnt:  12.00  max/min: 12/12  #appear: 1
+ . . . . + __mpn_mul_1 (@0x7f749dbd2390)  23 15  0.00 % (0.00 %)   iBF=None #appear: 1  mem R=24 (16)  W=16 (8)
+ . . . . . + 1073  (__mpn_mul_1)  8 8  0.00 % (0.00 %)   iBF=None, mem=16  Avg. itr cnt:  2.00  max/min: 2/2  #appear: 1  mem R=8 (8)  W=8 (8)
+ . + .plt (@0x400440)  8 8  0.00 % (0.00 %)   iBF=None #appear: 4  mem R=48 (48)  W=16 (16)
+ . + _IO_puts (@0x7f749dbf89c0)  2073 292  0.00 % (0.00 %)   iBF=None #appear: 4  mem R=2660 (640)  W=1535 (320)
+ . . + __GI_strlen (@0x7f749dc11160)  120 108  0.00 % (0.00 %)   iBF=None #appear: 4
+ . . . + 1320  (__GI_strlen)  12 12  0.00 % (0.00 %)   iBF=None, mem=48  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 4
+ . . + _IO_file_xsputn (@0x7f749dc016e0)  1105 301  0.00 % (0.00 %)   iBF=None #appear: 4  mem R=808 (357)  W=539 (273)
+ . . . + 1262  (_IO_file_xsputn)  550 550  0.00 % (0.00 %)   iBF=None, mem=110  Avg. itr cnt:  37.67  max/min: 43/33  #appear: 3
+ . . . + mempcpy (@0x7f749dc14500)  133 97  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=137 (41)  W=113 (17)
+ . . . . + 1348  (mempcpy)  36 36  0.00 % (0.00 %)   iBF=None, mem=192  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 3  mem R=96 (96)  W=96 (96)
+ . . . + 1261  (_IO_file_xsputn)  6 6  0.00 % (0.00 %)   iBF=None, mem=2  Avg. itr cnt:  2.00  max/min: 2/2  #appear: 1  mem R=1 (1)  W=1 (1)
+ . . . + _IO_file_overflow (@0x7f749dc02290)  115 24  0.00 % (0.00 %)   iBF=None #appear: 1  mem R=203 (44)  W=152 (24)
+ . . . . + _IO_do_write (@0x7f749dc02ff0)  91 49  0.00 % (0.00 %)   iBF=None #appear: 1  mem R=159 (94)  W=128 (88)
+ . . . . . + _IO_file_write (@0x7f749dc01a90)  42 24  0.00 % (0.00 %)   iBF=None #appear: 1  mem R=65 (48)  W=40 (32)
+ . . . . . . + 1264  (_IO_file_write)  18 11  0.00 % (0.00 %)   iBF=None, mem=25    |irreducible|  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 1  mem R=17 (5)  W=8 (8)
+ . . . . . . . + write (@0x7f749dc6b5f0)  7 7  0.00 % (0.00 %)   iBF=None #appear: 1
+ . . + __overflow (@0x7f749dc03750)  24 24  0.00 % (0.00 %)   iBF=None #appear: 4
+ . . + _IO_file_overflow (@0x7f749dc02290)  532 168  0.00 % (0.00 %)   iBF=None #appear: 4  mem R=924 (288)  W=676 (164)
+ . . . + _IO_do_write (@0x7f749dc02ff0)  364 196  0.00 % (0.00 %)   iBF=None #appear: 4  mem R=636 (376)  W=512 (352)
+ . . . . + _IO_file_write (@0x7f749dc01a90)  168 96  0.00 % (0.00 %)   iBF=None #appear: 4  mem R=260 (192)  W=160 (128)
+ . . . . . + 1264  (_IO_file_write)  72 44  0.00 % (0.00 %)   iBF=None, mem=100    |irreducible|  Avg. itr cnt:  1.00  max/min: 1/1  #appear: 4  mem R=68 (20)  W=32 (32)
+ . . . . . . + write (@0x7f749dc6b5f0)  28 28  0.00 % (0.00 %)   iBF=None #appear: 4
+ . + .plt (@0x400450)  7 7  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=40 (40)  W=16 (16)
+ . + __gettimeofday (@0x7f749dc2c790)  288 15  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=744 (48)  W=360 (24)
+ . . +  (@0x7fff8b9ff890)  273 273  0.00 % (0.00 %)   iBF=None #appear: 3  mem R=696 (696)  W=336 (336)
+ . + jacobi (@0x400b20)  5943515319 58  99.60 % (0.00 %)   iBF=  3.9 (None) #appear: 2  mem R=12417642340 (104)  W=865651616 (144)
+ . . + 8  (@0x400b7b)  5943515261 3735  99.60 % (0.00 %)   iBF=  3.9 3409781760/13283293708 (None)  Avg. itr cnt:  110.50  max/min: 217/4  #appear: 2  mem R=12417642236 (6148)  W=865651472 (3516)
+ . . . + 9  (@0x400b99)  5674008120 341000  95.09 % (0.01 %)   iBF=  3.6 3409781760/12432314400 (None)  Avg. itr cnt:  63.00  max/min: 63/63  #appear: 220  mem R=11992015200 (272800)  W=440299200 (545600)
+ . . . . + 10  (@0x400c00)  5673667120 28753120  95.08 % (0.48 %)   iBF=  3.6 3409781760/12431496000 (None)  Avg. itr cnt:  63.00  max/min: 63/63  #appear: 13640  mem R=11991742400 (57506240)  W=439753600 (13530880)
+ . . . . . + 11  (@0x400cac)  5644914000 5644914000  94.60 % (94.60 %)   iBF=  3.6 3409781760/12360458880 (3.6)  Avg. itr cnt:  126.00  max/min: 126/126  #appear: 845680  mem R=11934236160 (11934236160)  W=426222720 (426222720)
+ . . . + 12  (@0x400e61)  269503406 204099  4.52 % (0.00 %)   iBF=None, mem=850969644  Avg. itr cnt:  62.85  max/min: 63/29  #appear: 220  mem R=425620888 (435404)  W=425348756 (163272)
+ . . . . + 13  (@0x400e90)  269299307 59026761  4.51 % (0.99 %)   iBF=None, mem=850370968  Avg. itr cnt:  62.00  max/min: 62/50  #appear: 13607  mem R=425185484 (18559684)  W=425185484 (18559684)
+ . . . . . + 14  (@0x400ee8)  5059968 5059968  0.08 % (0.08 %)   iBF=None, mem=5059968  Avg. itr cnt:  2.00  max/min: 3/1  #appear: 632497  mem R=2529984 (2529984)  W=2529984 (2529984)
+ . . . . . + 15  (@0x400f40)  200782040 200782040  3.36 % (3.36 %)   iBF=None, mem=803128160  Avg. itr cnt:  30.75  max/min: 31/30  #appear: 843622  mem R=401564080 (401564080)  W=401564080 (401564080)
+ . . . . . + 16  (@0x400f90)  4430538 4430538  0.07 % (0.07 %)   iBF=None, mem=5063472  Avg. itr cnt:  2.00  max/min: 3/1  #appear: 632936  mem R=2531736 (2531736)  W=2531736 (2531736)
+DOT FILE GENERATION DONE
+Fini OK

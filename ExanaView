@@ -1,0 +1,14 @@
+#!/usr/bin/ruby
+
+#print ARGV.size
+#print ARGV
+
+dir=ENV['EXANA_DIR'] 
+#dir="/work/nicamdc/ExanaPkg"
+command=dir+"/util/ExanaView/exanav"
+for f in ARGV	
+  command=command +" " + f
+end
+#p command
+system(command)
+
