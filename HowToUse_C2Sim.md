@@ -20,7 +20,7 @@ Here, let's move to the directory and start profiling.
      % less <mmdd.pid>/exana.out
 
 exana.out
-'''
+```
 CacheSim result:         
 #cacheSim_eval = 5
   Cache Configuration:
@@ -40,7 +40,7 @@ CacheSim result:
           L1         92.99%
           L2          0.00%
           L3          2.18%
-'''
+```
 
      From exana.out, we can find how many cache misses occur and how
      much the conflict misses are detected.  Note that we perform a
@@ -50,7 +50,7 @@ CacheSim result:
      % cd <mmdd.pid>
      % checkLineconf
 
-'''
+```
 Target execution binary: /home/ysato/ExanaPkg-git/Sample.Exana/C2Sim/bmt.fixed
 missPC 4015e1  L1 cnt=12355108  memObj= malloc(1)@newMat:himenoBMTxpa_omp.c:254 [inline@main:120];96.6% loc=himenoBMTxpa_omp.c:354
   [inter-array] 4015dc cnt=11328332  memObj= malloc(7)@newMat:himenoBMTxpa_omp.c:254 [inline@main:126];32.3% loc=himenoBMTxpa_omp.c:354
@@ -61,7 +61,7 @@ missPC 4014f5  L1 cnt=12353417  memObj= malloc(5)@newMat:himenoBMTxpa_omp.c:254 
   [inter-array] 4015a0 cnt=11948117  memObj= malloc(6)@newMat:himenoBMTxpa_omp.c:254 [inline@main:125];32.3% loc=himenoBMTxpa_omp.c:354
   [inter-array] 40158f cnt=405300  memObj= malloc(1)@newMat:himenoBMTxpa_omp.c:254 [inline@main:120];96.6% loc=himenoBMTxpa_omp.c:354
 missPC 40150d  L1 cnt=12353417  memObj= malloc(5)@newMat:himenoBMTxpa_omp.c:254 [inline@main:124];24.2% loc=himenoBMTxpa_omp.c:354
-'''
+```
 
      From the result outputted to stdout, we can analyze reason around
      the line-conflicts.  For more details, please read the paper in
