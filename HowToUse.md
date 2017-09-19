@@ -7,7 +7,7 @@ Examples are in the 'Sample.Exana' directory.  Please move to
 
      % cd Sample.Exana
 
-Then, you can find three directories: 'LoopAndCall', 'Himeno', and 'C2Sim'.  Using these sample code, you can have experiences of application profiling.  If you are interested only in C2Sim's cache profiling, please check "HowToUse.C2Sim".
+Then, you can find three directories: 'LoopAndCall', 'Himeno', and 'C2Sim'.  Using these sample code, you can have experiences of application profiling.  If you are interested only in C2Sim's cache profiling, please check "HowToUse_C2Sim".
 
 Here, let's start with a simple example that visualize nests of loops and calls.
 
