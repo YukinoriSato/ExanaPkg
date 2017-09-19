@@ -19,7 +19,7 @@ Here, let's move to the directory and start profiling.
      % Exana -mode C2Sim -- ./bmt.fixed 
      % less <mmdd.pid>/exana.out
 
-exana.out
+exana.out:
 ```
 CacheSim result:         
 #cacheSim_eval = 5
@@ -42,10 +42,9 @@ CacheSim result:
           L3          2.18%
 ```
 
-     From exana.out, we can find how many cache misses occur and how
-     much the conflict misses are detected.  Note that we perform a
-     sampling based simulation.  Then, we can analyze the source of
-     conflicts.
+From exana.out, we can find how many cache misses occur and how much
+the conflict misses are detected.  Note that we perform a sampling
+based simulation.  Then, we can analyze the source of conflicts.
 
      % cd <mmdd.pid>
      % checkLineconf
@@ -63,6 +62,6 @@ missPC 4014f5  L1 cnt=12353417  memObj= malloc(5)@newMat:himenoBMTxpa_omp.c:254 
 missPC 40150d  L1 cnt=12353417  memObj= malloc(5)@newMat:himenoBMTxpa_omp.c:254 [inline@main:124];24.2% loc=himenoBMTxpa_omp.c:354
 ```
 
-     From the result outputted to stdout, we can analyze reason around
-     the line-conflicts.  For more details, please read the paper in
-     [Sato, Euro-Par 2017]
+From the result outputted to stdout, we can analyze reason around the
+line-conflicts.  For more details, please read the paper in [Sato,
+Euro-Par 2017]
