@@ -7,8 +7,9 @@ Examples are in the 'Sample.Exana' directory.  Please move to
 
      % cd Sample.Exana
 
-Then, you can find two directories: 'LoopAndCall' and 'Himeno'.  Using
-these sample code, you can have experiences of application profiling.
+Then, you can find three directories: 'LoopAndCall', 'Himeno', and 'C2Sim'.  Using these sample code, you can have experiences of application profiling.  If you are interested only in C2Sim's cache profiling, please check "HowToUse.C2Sim".
+
+Here, let's start with a simple example that visualize nests of loops and calls.
 
      % cd LoopAndCall
      % ./SampleMain
@@ -93,3 +94,5 @@ before Exana command.  Then, you can obtain LCCTs for each process.
       % mpirun -np 4 Exana -- ./bmt S
       % vizLcctm mmdd.pid/lcct.dat &
 
+
+Next, we will show how to use C2Sim's cache profiling in another file "HowToUse.C2Sim".  Please open the file and check how to use it.

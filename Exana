@@ -1,23 +1,19 @@
-#!/usr/bin/ruby
+#!/usr/bin/env python
 
-#print ARGV.size
-#print ARGV
+import sys
+import os
+import subprocess
 
-dir=ENV['EXANA_DIR'] 
-pindir=ENV['PIN_DIR']
-# for pcc
-#dir="/work/dev-exana/ExanaPkg"
+exana_dir = os.environ['EXANA_DIR']
+pin_dir = os.environ['PIN_DIR']
 
-command=dir + "/pin -t "+ pindir + "/source/tools/Exana/obj-intel64/Exana.so -cacheConfig " + dir + "/cache.config"
-#command=dir+"/pin -t ~/pin/source/tools/Exana/obj-intel64/loopContextProf.so"
+#cmd = pin_dir + "/pin -t "+ pin_dir + "/source/tools/Exana/obj-intel64/Exana.so -cacheConfig " + exana_dir + "/cache.config"
 
-# for ExanaPkg release
-#command=dir+"/pin -t "+ dir + "/pintool/loopContextProf.so -cacheConfig "+dir+"/cache.config"
+cmd= pin_dir+"/pin -t "+ exana_dir + "/pintool/Exana.so -cacheConfig "+exana_dir+"/cache.config"
 
 
-for f in ARGV	
-  command=command +" " + f
-end
-#p command
-system(command)
+args = sys.argv
+for i in range(1, len(args)):
+	cmd += ' ' + args[i]
 
+subprocess.call(cmd, shell=True)

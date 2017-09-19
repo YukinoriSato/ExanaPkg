@@ -1,0 +1,13 @@
+#!/usr/bin/ruby
+
+#print ARGV.size
+#print ARGV
+
+dir=ENV['EXANA_DIR'] 
+command=dir+"/util/memLayout/checkLineconf.py"
+for f in ARGV	
+  command=command +" " + f
+end
+p command
+system(command)
+
