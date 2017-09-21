@@ -15,7 +15,7 @@ All Rights Reserved.
 
 
 # Usage
-How to analyze an application is in the file './HowToUse'
+How to analyze an application is in [How to Use](HowToUse.md)
 
 
 This code is for 64bit linux environment, 
@@ -38,7 +38,7 @@ This code is for 64bit linux environment,
 * cd ExanaPkg
 * Set the variables 'EXANA_DIR' and 'PIN_DIR' 
 
-    Edit setupExana.sh(bash), setupExana.csh(csh) to the absolute paths for ExanaPkg and Pin tool kit directory if you install Exana other than '/home/$USER'.
+    Edit setupExana.sh(bash) or setupExana.csh(csh) to the absolute paths for ExanaPkg and Pin tool kit directory if you install Exana other than '/home/$USER'.
 
 * Install the following software
 
@@ -48,19 +48,19 @@ This code is for 64bit linux environment,
 
 ## Use the command 'Exana'
 
-% source ExanaPkg/setupExana.sh
-% Exana -mode C2Sim -- ./a.out
+    % source ExanaPkg/setupExana.sh
+    % Exana -mode C2Sim -- ./a.out
 
-    This is an example for activating a cache simulator with line-conflict detector within Exana.
+This is an example for activating a cache simulator with line-conflict detector within Exana.
 
-% Exana [options] -- ./a.out
+    % Exana [options] -- ./a.out
  
-    Exana is a script written by Python which invoke pin and pintool.
-    This command eases the activation of pin tool set.
+Exana is a script written by Python which invoke pin and pintool.
+This command eases the activation of pin tool set.
 
 After the execution of the Exana completed, you obtain several output files in the <mmdd.pid> directory.  In "exana.out", a summary for the profiling is described.
 
-More detail information and demos are in the file './HowToUse'
+More detail information and demos are in [How to Use](HowToUse.md)
 
     You can use it with options (all of options can be found at "getOptions.cpp" in Exana source code;
 
@@ -101,4 +101,5 @@ Please read the following papers if you are interested in detail techniques behi
 * Yukinori Sato, Yasushi Inoguchi, Tadao Nakamura. Identifying Program Loop Nesting Structures during Execution of Machine Code. IEICE Transaction on Information and Systems, Vol.E97-D, No.9, pp.2371-2385, Sep. 2014. (DOI:10.1587/transinf.2013EDP7455)
 
 * Yukinori Sato, Yasushi Inoguchi and Tadao Nakamura. Whole Program Data Dependence Profiling to Unveil Parallel Regions in the Dynamic Execution. In Proceedings of 2012 IEEE International Symposium on Workload Characterization (IISWC 2012). (DOI:10.1109/IISWC.2012.6402902) 
+
 
