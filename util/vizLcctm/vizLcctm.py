@@ -34,6 +34,8 @@ global wsAnaFlag
 
 # [Execute the generateDot program to create the lcctm.png file]
 def exegenerateDot(filename):
+
+    print "exeGenerateDot"
     try:
         infile = open(filename, 'rb')
     except:
@@ -58,7 +60,7 @@ def exegenerateDot(filename):
     time.sleep(1)
 
     depFlag=0;
-    if os.path.basename(filename)=="lcctm.dat":
+    if os.path.basename(filename).find("lcctm.dat") > -1:
         depFlag=1;
 
     #print "hello",filename, os.path.basename(filename), os.path.dirname(filename), depFlag
@@ -91,7 +93,7 @@ def exegenerateDot(filename):
 
 # [Execute the generateDot program to create the lcctm.png file]
 def execgenerateDot(filename, exefile):
-
+    print "exeCGenerateDot"
     try:
         infile = open(filename, 'rb')
     except:
