@@ -7,7 +7,7 @@ Examples are in the 'Sample.Exana' directory.  Please move to
 
      % cd Sample.Exana
 
-Then, you can find three directories: 'LoopAndCall', 'Himeno', and 'C2Sim'.  Using these sample code, you can have experiences of application profiling.  If you are interested only in C2Sim's cache profiling, please check "HowToUse_C2Sim".
+Then, you can find three directories: 'LoopAndCall', 'Himeno', and 'C2Sim'.  Using these sample code, you can have experiences of application profiling.  If you are interested only in C2Sim's cache profiling, please check [How To Use C2Sim](HowToUse_C2Sim.md)
 
 Here, let's start with a simple example that visualize nests of loops and calls.
 
@@ -15,7 +15,7 @@ Here, let's start with a simple example that visualize nests of loops and calls.
      % ./SampleMain
      % Exana -- ./SampleMain
      % less <mmdd.pid>/exana.out
-     % vizLcctm <mmdd.pid>/lcct.dat &
+     % vizLcctm <mmdd.pid>/lcct.dat.0 &
 
      Note: Please set up your environment with 'setupExana' script.
      	   Further information is in the INSTALL file of ExanaPkg.
@@ -48,7 +48,7 @@ If you would like to analyze data dependences among loops and calls,
 then please specify an option for LCCT+M analysis:
 
      % Exana -mode LCCT+M -- ./SampleMain
-     % vizLcctm <mmdd.pid>/lcctm.dat&
+     % vizLcctm <mmdd.pid>/lcctm.dat.0 &
 
 If you would like to obtain actual memory traces during the execution,
 then please specify an option for memtrace, and the result is
@@ -73,9 +73,9 @@ programs.
       % export OMP_NUM_THREADS=1
       % ./bmt S
       % Exana -- ./bmt S
-      % vizLcctm mmdd.pid/lcctm.dat &
+      % vizLcctm mmdd.pid/lcctm.dat.0 &
       % Exana -mode LCCT+M -- ./bmt S
-      % vizLcctm mmdd.pid/lcctm.dat &
+      % vizLcctm mmdd.pid/lcctm.dat.0 &
 
 If you would like to execute a multithread application, currently we
 only support analyzing LCCT for the primary thread, which is running
@@ -84,7 +84,7 @@ at the begining of the main function before other threads are forked.
       % export OMP_NUM_THREADS=4
       % ./bmt S
       % Exana -- ./bmt S
-      % vizLcctm mmdd.pid/lcctm.dat &
+      % vizLcctm mmdd.pid/lcctm.dat.3 &
 
 If you would like to execute an MPI application, please specify mpirun
 before Exana command.  Then, you can obtain LCCTs for each process.
@@ -92,7 +92,7 @@ before Exana command.  Then, you can obtain LCCTs for each process.
       % export OMP_NUM_THREADS=1
       % mpirun -np 4 ./bmt S
       % mpirun -np 4 Exana -- ./bmt S
-      % vizLcctm mmdd.pid/lcct.dat &
+      % vizLcctm mmdd.pid/lcctm.dat.0 &
 
 
-Next, we will show how to use C2Sim's cache profiling in another file "HowToUse.C2Sim".  Please open the file and check how to use it.
+Next, we will show how to use C2Sim's cache profiling in another file [How To Use C2Sim](HowToUse_C2Sim.md)  Please open the file and check how to use it.

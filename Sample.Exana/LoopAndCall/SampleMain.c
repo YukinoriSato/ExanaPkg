@@ -17,7 +17,7 @@ int initA()
 int func1()
 {
   int i,j;
-  printf("  fucn1()\n");
+  printf("  func1()\n");
 
   initA();
 

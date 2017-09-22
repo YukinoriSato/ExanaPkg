@@ -14,7 +14,6 @@ code, we use an example code in C2Sim.
 Here, let's move to the directory and start profiling.
 
      % cd C2Sim
-     % make
      % export OMP_NUM_THREADS=1
      % Exana -mode C2Sim -- ./bmt.fixed 
      % less <mmdd.pid>/exana.out
