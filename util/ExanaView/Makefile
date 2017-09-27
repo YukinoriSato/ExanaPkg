@@ -11,10 +11,10 @@ EXEEXT =
 WINDRES = 
 SETFILE = 
 NM = nm
-BK_DEPS = /home/yukinori/wxWidgets/wxWidgets/gtk_build/bk-deps
+BK_DEPS = /home/ysato/wxWidgets/gtk_build/bk-deps
 #BK_DEPS = /work/wxWidgets/wxWidgets/build_gtk/bk-deps
 srcdir = .
-top_srcdir = /home/yukinori/wxWidgets/wxWidgets
+top_srcdir = /home/ysato/wxWidgets/
 #top_srcdir = /work/wxWidgets/wxWidgets
 LIBS = -lz -ldl -lm
 LDFLAGS_GUI = 
@@ -42,7 +42,7 @@ CXXWARNINGS = -Wall -Wundef -Wunused-parameter -Wno-ctor-dtor-privacy -Woverload
 HOST_SUFFIX = 
 SAMPLES_RPATH_FLAG = -Wl,-rpath,$(wx_top_builddir)/lib
 SAMPLES_CXXFLAGS = 
-wx_top_builddir = /home/yukinori/wxWidgets/wxWidgets/gtk_build
+wx_top_builddir = /home/ysato/wxWidgets/gtk_build
 #wx_top_builddir = /work/wxWidgets/wxWidgets/build_gtk
 
 ### Variables: ###
@@ -52,10 +52,10 @@ WX_RELEASE = 3.1
 #WX_VERSION = $(WX_RELEASE).0
 WX_VERSION = $(WX_RELEASE).1
 LIBDIRNAME = $(wx_top_builddir)/lib
-#	-I$(srcdir) $(__DLLFLAG_p) -I/home/yukinori/wxWidgets/samples $(CXXWARNINGS) 
+#	-I$(srcdir) $(__DLLFLAG_p) -I/home/ysato/wxWidgets/samples $(CXXWARNINGS) 
 EXANAV_CXXFLAGS = -D__WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p) $(__DEBUG_DEFINE_p) \
 	$(__EXCEPTIONS_DEFINE_p) $(__RTTI_DEFINE_p) $(__THREAD_DEFINE_p) \
-	-I$(srcdir) $(__DLLFLAG_p) -I/home/yukinori/wxWidgets/wxWidgets/gtk_build/samples $(CXXWARNINGS) \
+	-I$(srcdir) $(__DLLFLAG_p) -I/home/ysato/wxWidgets/gtk_build/samples $(CXXWARNINGS) \
 	$(SAMPLES_CXXFLAGS) $(CPPFLAGS) $(CXXFLAGS)
 EXANAV_OBJECTS =  \
 	exanav_exanav.o \
@@ -214,9 +214,9 @@ exanav_exanavadd.o: $(srcdir)/exanavadd.cpp
 	$(CXXC) -c -o $@ $(EXANAV_CXXFLAGS) $(srcdir)/exanavadd.cpp
 
 exanav_exanav_rc.o: $(srcdir)/exanav.rc
-	#$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2) $(__DEBUG_DEFINE_p_2)  $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)  --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir  /home/yukinori/wxWidgets/samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include
-#	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2) $(__DEBUG_DEFINE_p_2)  $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)  --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir  /work/wxWidgets/wxWidgets/build_gtk/samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include
-	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2) $(__DEBUG_DEFINE_p_2)  $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)  --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir  /home/yukinori/wxWidgets/wxWidgets/gtk_build/samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include
+	#$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2) $(__DEBUG_DEFINE_p_2)  $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)  --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir  /home/ysato/wxWidgets/samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include
+#	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2) $(__DEBUG_DEFINE_p_2)  $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)  --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir  /work/wxWidgets/build_gtk/samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include
+	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2) $(__DEBUG_DEFINE_p_2)  $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)  --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir  /home/ysato/wxWidgets/gtk_build/samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include
 
 
 
