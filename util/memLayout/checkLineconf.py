@@ -576,7 +576,21 @@ def main():
 		if json_flag==0:
 			print "Target execution binary: "+bin_name
 	else:
-		print "Required files are missing:  check  "+ str(bin_name)+ "  and  " + str(mallocdpath)
+                if os.path.exists(bin_name):
+                        print "Required files are missing:  check  "+ "  and  " + str(mallocdpath)
+                else:
+                        print "Required files are missing:  check  "+ str(bin_name)
+
+                print "  % checkLineconf.py  [-j, -g -b exefile]"
+		print "        Options:   "
+		print "           -b option with the exefile name"
+		print "                     open debuginfo using addr2line and obtain source location"
+		print "           -j option"
+		print "                     output json file for ExanaView"
+
+		print "           -g option for outputting statistics for all of instructions"
+		print "                     default is outputting instructions exceeding 1% of totals (only top 1% instructions in the Est.lat descending order)"
+	
 		sys.exit()
 
 	#print "bin_reader.cache_stat()"

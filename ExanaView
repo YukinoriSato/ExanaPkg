@@ -1,14 +1,15 @@
-#!/usr/bin/ruby
+#!/usr/bin/env python
 
-#print ARGV.size
-#print ARGV
+import sys
+import os
+import subprocess
 
-dir=ENV['EXANA_DIR'] 
-#dir="/work/nicamdc/ExanaPkg"
-command=dir+"/util/ExanaView/exanav"
-for f in ARGV	
-  command=command +" " + f
-end
-#p command
-system(command)
+dir = os.environ['EXANA_DIR']
 
+cmd=dir+"/util/ExanaView/exanav"
+
+args = sys.argv
+for i in range(1, len(args)):
+	cmd += ' ' + args[i]
+
+subprocess.call(cmd, shell=True)
