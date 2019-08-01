@@ -11,7 +11,7 @@ All Rights Reserved.
 
 ## Demo video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Xlbx_XzdAQM" frameborder="0" allowfullscreen></iframe>
+[https://www.youtube.com/embed/Xlbx_XzdAQM]
 
 ## Update:
 
