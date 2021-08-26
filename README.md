@@ -4,7 +4,7 @@
 
 ExanaPkg: Utility for Exana (EXecution-driven Application aNAlysis tool)
 
-Copyright (C)   2014-2017,   Yukinori Sato
+Copyright (C)   2014-2021,   Yukinori Sato
 All Rights Reserved. 
 
 ------------------------------------------------------------------------
@@ -25,6 +25,7 @@ How to analyze an application is in [How to Use](HowToUse.md)
 This code is for 64bit linux environment, 
     "ia32_intel64-linux"
      Tested on 
+     - CentOS 7.7
      - CentOS 7.2
      - CentOS 6.4
      - Red Hat Enterprise Linux Server release 5.4
@@ -33,11 +34,12 @@ This code is for 64bit linux environment,
 ## How to build
 * Download Pin tool kit Intel64 linux
 
-    For information about Pin tool kit, please check:
-    	http://pintool.org/ 
-    Here, Exana is verified using Pin tool kit rev 71313 for Intel64 linux on CentOS.
+    % wget https://software.intel.com/sites/landingpage/pintool/downloads/pin-3.7-97619-g0d0c92f4f-gcc-linux.tar.gz
 
-* Unpack the pin-2.14-71313-gcc.4.4.7-linux.tar.gz
+    For information about Pin tool kit, please check:
+    	https://software.intel.com/content/www/us/en/develop/articles/pin-a-dynamic-binary-instrumentation-tool.html
+
+* Unpack the pin-3.7 (Due to the API update of Pin after 3.8, the current ExanaPkg can be executed before pin-3.7)
 * git clone https://github.com/YukinoriSato/ExanaPkg.git
 * cd ExanaPkg
 * Set the variables 'EXANA_DIR' and 'PIN_DIR' 
