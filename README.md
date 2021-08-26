@@ -25,7 +25,7 @@ How to analyze an application is in [How to Use](HowToUse.md)
 This code is for 64bit linux environment, 
     "ia32_intel64-linux"
      Tested on 
-     - CentOS 7.7
+     - CentOS 7.9
      - CentOS 7.2
      - CentOS 6.4
      - Red Hat Enterprise Linux Server release 5.4
