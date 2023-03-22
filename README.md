@@ -51,13 +51,18 @@ This code is for 64bit linux environment,
     Install graphviz, graphviz-devel, graphviz-gd for visualization
     Install php (5.4 or later) for interactive visualization
 
+    In CentOS 7.8 environment, I execute 
+    % yum install graphviz-dev pygtk2 ruby
 
 ## Use the command 'Exana'
 
     % source ExanaPkg/setupExana.sh
     % Exana -mode C2Sim -- ./a.out
 
-This is an example for activating a cache simulator with line-conflict detector within Exana.
+This is an example for activating a cache simulator with line-conflict detector within Exana.  To try C2Sim's cache profiling, please see [How To Use C2Sim](HowToUse_C2Sim.md).
+
+
+In addition to the cache profiling, Exana can perform various instruction-level profiling.
 
     % Exana [options] -- ./a.out
  
