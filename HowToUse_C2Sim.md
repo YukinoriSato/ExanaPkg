@@ -82,7 +82,7 @@ You can start ExanaView using the following commands.
     (Select current dir -> Select exanaview.json)
 
 
-[![Exana Demo Video](https://user-images.githubusercontent.com/22608651/226922798-286e15b0-22f2-447a-b121-0e01e1760d6c.png)](https://www.youtube.com/watch?v=Xlbx_XzdAQM)
+[![Exana Demo Video](https://user-images.githubusercontent.com/22608651/226929424-985440ce-0b02-4762-bb9b-6293822de679.png)](https://www.youtube.com/watch?v=Xlbx_XzdAQM)
 
 Note that `Exana -mode C2Sim -- ./bmt.fixed` in the demo video was deprecated.  Please use the mode `Exana -mode C2Sim -- ./bmt.fixed`
 
