@@ -402,8 +402,8 @@ struct treeNode* readLCCTM(FILE *fp, string NODEID)//FAISAL: NODEID is included 
     int size;
     fread(&size,sizeof(int),1,fp);
     char *c=(char *) malloc(size+1);
-    fread(c, sizeof(char),size+1,fp);
-
+    fread(c, sizeof(char),size,fp);
+    c[size]='\0';
     string *ss=new string(c);
     node->rtnName=ss;
     //fread(node->rtnName,sizeof(string),1,fp);

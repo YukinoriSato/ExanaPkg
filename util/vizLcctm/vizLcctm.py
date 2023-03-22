@@ -78,13 +78,13 @@ def exegenerateDot(filename):
         else:
             Exstatus = subprocess.call([generateDot,filename,"-mem -ins -flop -dep","-topN", "8"])
 
-    # subprocess.call(["ls", "-l", "lcctm.png"])
-    #print 'Ex Status' , Exstatus 
+    subprocess.call(["ls", "-l", "lcctm.png"])
+    print 'Ex Status' , Exstatus 
 
     dotFile=os.path.dirname(filename) +  '/lcctm.dot'
     command="dot -Tpng " + dotFile + " -o " + rmpng
     #command="/usr/bin/dot -V"
-    #print command
+    print command
     #subprocess.call(["/usr/bin/dot -Tpng", dotFile, "-o", rmpng], shell=True)
     subprocess.call(command, shell=True)
 	 
