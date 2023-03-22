@@ -64,3 +64,23 @@ missPC 40150d  L1 cnt=12353417  memObj= malloc(5)@newMat:himenoBMTxpa_omp.c:254 
 From the result outputted to stdout, we can analyze reason around the
 line-conflicts.  For more details, please read the paper in [Sato,
 Euro-Par 2017]
+
+
+
+How to use Exana View for diagnosing performance bottlenecks with source code
+-------------------------------------------------------------
+
+You can start ExanaView using the following commands.
+
+    % cd Sample.Exana/C2Sim
+    % make clean; make
+    % Exana -mode traceConsol -- ./bmt.fixed
+    % cd <mmdd.pid>
+    % traceConsol -j -b ../bmt.fixed > exanaview.json
+    % ExanaView
+    (MenuBar: File -> Open JSON file)
+    (Select current dir -> Select exanaview.json)
+
+Movie: [Youtube Link](https://www.youtube.com/watch?v=Xlbx_XzdAQM)
+
+
