@@ -74,13 +74,16 @@ You can start ExanaView using the following commands.
 
     % cd Sample.Exana/C2Sim
     % make clean; make
-    % Exana -mode traceConsol -- ./bmt.fixed
+    % Exana -mode C2Sim -- ./bmt.fixed
     % cd <mmdd.pid>
     % traceConsol -j -b ../bmt.fixed > exanaview.json
     % ExanaView
     (MenuBar: File -> Open JSON file)
     (Select current dir -> Select exanaview.json)
 
+![2023-03-22_22h39_25](https://user-images.githubusercontent.com/22608651/226922798-286e15b0-22f2-447a-b121-0e01e1760d6c.png)
+
 Movie: [Youtube Link](https://www.youtube.com/watch?v=Xlbx_XzdAQM)
+Note that "Exana -mode C2Sim -- ./bmt.fixed" was deprecated.  Now please use the mode "Exana -mode C2Sim -- ./bmt.fixed"
 
 
